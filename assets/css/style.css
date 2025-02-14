@@ -183,3 +183,20 @@ body {
 .banner-text-clr {
     color: #1557AB;
 }
+
+.banner{
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    transform: translate(-20%, -40%);
+}
+
+
+/* ============== Department BAnner ============= */
+.banner-text{
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    transform: translate(-20%, -40%);
+
+}
