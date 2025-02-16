@@ -5,6 +5,7 @@
 :root {
     --font-family-secondary: "Times Now", serif;
     --font-family-primary: "Helvetica Neue Web", sans-serif;
+    --primary-color: #053573;
 
 }
 
@@ -44,6 +45,7 @@
 
 body {
     background-color: #000;
+    color: #fff;
 }
 
 .primary-font {
@@ -52,6 +54,10 @@ body {
 
 .secondary-font {
     font-family: var(--font-family-secondary) !important;
+}
+
+.primary-clr {
+    color: var(--primary-color);
 }
 
 .fs-12 {
@@ -142,11 +148,16 @@ body {
     font-size: 70px;
 }
 
+.custom-link {
+    color: #fff;
+    text-decoration: none;
+}
+
 .primary-font {
     font-family: var(--font-family-primary) !important;
 }
 
-.padding-1px{
+.padding-1px {
     padding: 1px;
 }
 
@@ -184,7 +195,7 @@ body {
     color: #1557AB;
 }
 
-.banner{
+.banner {
     position: absolute;
     top: 40%;
     left: 20%;
@@ -193,10 +204,54 @@ body {
 
 
 /* ============== Department BAnner ============= */
-.banner-text{
+.banner-text {
     position: absolute;
     top: 40%;
     left: 20%;
     transform: translate(-20%, -40%);
 
+}
+
+/* ================== Footer ====================== */
+
+footer ul {
+    display: flex;
+    gap: 50px;
+    color: #fff;
+}
+
+.footer-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-socail ul {
+    list-style: none;
+    gap: 20px;
+}
+
+.footer-socail ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-custom {
+    background-color: #fff;
+    color: #000;
+}
+
+.btn-custom:hover {
+    background-color: aliceblue;
+    color: #000;
+}
+
+/* ============== Subscribe ============= */
+.subscribe-input{
+    background-color: #fff;
+    color: #000;
+}
+
+.subscribe-input:focus {
+    outline: none;
+    box-shadow: none;
 }
