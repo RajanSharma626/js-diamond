@@ -1,12 +1,20 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&family=Inter:wght@100..900&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&family=Golos+Text:wght@400..900&family=Inter:wght@100..900&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
 
 :root {
     --font-family-secondary: "Times Now", serif;
     --font-family-primary: "Helvetica Neue Web", sans-serif;
     --primary-color: #053573;
 
+}
+
+
+.golos-font {
+    font-family: "Golos Text", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
 }
 
 .old-standard-tt-regular {
@@ -157,6 +165,10 @@ body {
     font-family: var(--font-family-primary) !important;
 }
 
+.primary-bg {
+    background-color: var(--primary-color);
+}
+
 .padding-1px {
     padding: 1px;
 }
@@ -246,7 +258,7 @@ footer ul {
 }
 
 /* ============== Subscribe ============= */
-.subscribe-input{
+.subscribe-input {
     background-color: #fff;
     color: #000;
 }
@@ -254,4 +266,17 @@ footer ul {
 .subscribe-input:focus {
     outline: none;
     box-shadow: none;
+}
+
+/* ================================== experties-banner =========================== */
+.experties-banner {
+    height: 100vh;
+    background: url('../images/banner/experties-banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.experties-banner .banner {
+    left: 15% !important;
 }
