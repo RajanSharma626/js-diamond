@@ -156,6 +156,10 @@ body {
     font-size: 70px;
 }
 
+.line-heigh26 {
+    line-height: 26px;
+}
+
 .custom-link {
     color: #fff;
     text-decoration: none;
@@ -175,6 +179,25 @@ body {
 
 .text-decoration-none {
     text-decoration: none !important;
+}
+
+.btn-theme {
+    border: 1.5px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-theme:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+
+.h-100vh {
+    height: 100vh;
 }
 
 
@@ -207,7 +230,10 @@ body {
     color: #1557AB;
 }
 
-.banner {
+.banner,
+.department-banner-content,
+.services-banner-content,
+.contact-banner-content {
     position: absolute;
     top: 40%;
     left: 20%;
@@ -222,6 +248,14 @@ body {
     left: 20%;
     transform: translate(-20%, -40%);
 
+}
+
+.department-banner {
+    height: 100vh;
+    background: url('../images/department/2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 /* ================== Footer ====================== */
@@ -279,4 +313,88 @@ footer ul {
 
 .experties-banner .banner {
     left: 15% !important;
+}
+
+
+/* ============================ Service ========================== */
+.service-section {
+    background: url('../images/service/1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+}
+
+.size-section {
+    background: url('../images/service/size-banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.bagging-kitting-section {
+    background: url('../images/service/bagging-kitting.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.custom-assortment-section {
+    background: url('../images/service/custom-assortment.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.fluorescence-grading-section {
+    background: url('../images/service/fluorescence-grading.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* ============== Quality Standard ================= */
+.quality-standard-banner {
+    background: url('../images/banner/quality-standard.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+
+
+/* =============== Service ========================= */
+
+.services-banner {
+    background: url('../images/banner/services-banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+/* =============== Contact ========================= */
+
+.contact-banner {
+    background: url('../images/banner/services-banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+/* =================== contact form ===================*/
+input,
+textarea {
+    background-color: #000 !important;
+    color: #fff !important;
+    border: 1px solid #fff !important;
+    padding: 10px !important;
+}
+
+::placeholder {
+    color: #ffffff5e !important;
 }
