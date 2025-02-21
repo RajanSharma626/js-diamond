@@ -1,12 +1,204 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&family=Golos+Text:wght@400..900&family=Inter:wght@100..900&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&family=Golos+Text:wght@400..900&family=Inter:wght@100..900&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap'); */
+
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-55');
+
+@font-face {
+    font-family: 'Times Now';
+    src: url('../font/TimesNow-SemiLight.eot');
+    src: local('Times Now SemiLight'), local('TimesNow-SemiLight'),
+        url('../font/TimesNow-SemiLight.eot?#iefix') format('embedded-opentype'),
+        url('../font/TimesNow-SemiLight.woff2') format('woff2'),
+        url('../font/TimesNow-SemiLight.woff') format('woff'),
+        url('../font/TimesNow-SemiLight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Times Now';
+    src: url('../font/TimesNow-LightItalic.eot');
+    src: local('Times Now Light Italic'), local('TimesNow-LightItalic'),
+        url('../font/TimesNow-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('../font/TimesNow-LightItalic.woff2') format('woff2'),
+        url('../font/TimesNow-LightItalic.woff') format('woff'),
+        url('../font/TimesNow-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Times Now';
+    src: url('../font/TimesNow-Bold.eot');
+    src: local('Times Now Bold'), local('TimesNow-Bold'),
+        url('../font/TimesNow-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../font/TimesNow-Bold.woff2') format('woff2'),
+        url('../font/TimesNow-Bold.woff') format('woff'),
+        url('../font/TimesNow-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Times Now';
+    src: url('../font/TimesNow-BoldItalic.eot');
+    src: local('Times Now Bold Italic'), local('TimesNow-BoldItalic'),
+        url('../font/TimesNow-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../font/TimesNow-BoldItalic.woff2') format('woff2'),
+        url('../font/TimesNow-BoldItalic.woff') format('woff'),
+        url('../font/TimesNow-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Times Now';
+    src: url('../font/TimesNow-SemiBoldItalic.eot');
+    src: local('Times Now SemiBold Italic'), local('TimesNow-SemiBoldItalic'),
+        url('../font/TimesNow-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../font/TimesNow-SemiBoldItalic.woff2') format('woff2'),
+        url('../font/TimesNow-SemiBoldItalic.woff') format('woff'),
+        url('../font/TimesNow-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Times Now';
+    src: url('../font/TimesNow-SemiLightItalic.eot');
+    src: local('Times Now SemiLight Italic'), local('TimesNow-SemiLightItalic'),
+        url('../font/TimesNow-SemiLightItalic.eot?#iefix') format('embedded-opentype'),
+        url('../font/TimesNow-SemiLightItalic.woff2') format('woff2'),
+        url('../font/TimesNow-SemiLightItalic.woff') format('woff'),
+        url('../font/TimesNow-SemiLightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Times Now';
+    src: url('../font/TimesNow-SemiBold.eot');
+    src: local('Times Now SemiBold'), local('TimesNow-SemiBold'),
+        url('../font/TimesNow-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../font/TimesNow-SemiBold.woff2') format('woff2'),
+        url('../font/TimesNow-SemiBold.woff') format('woff'),
+        url('../font/TimesNow-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Times Now';
+    src: url('../font/TimesNow-ExtraLightItalic.eot');
+    src: local('Times Now ExtraLight Italic'), local('TimesNow-ExtraLightItalic'),
+        url('../font/TimesNow-ExtraLightItalic.eot?#iefix') format('embedded-opentype'),
+        url('../font/TimesNow-ExtraLightItalic.woff2') format('woff2'),
+        url('../font/TimesNow-ExtraLightItalic.woff') format('woff'),
+        url('../font/TimesNow-ExtraLightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Times Now';
+    src: url('../font/TimesNow-ExtraLight.eot');
+    src: local('Times Now ExtraLight'), local('TimesNow-ExtraLight'),
+        url('../font/TimesNow-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('../font/TimesNow-ExtraLight.woff2') format('woff2'),
+        url('../font/TimesNow-ExtraLight.woff') format('woff'),
+        url('../font/TimesNow-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Times Now';
+    src: url('../font/TimesNow-ExtraBold.eot');
+    src: local('Times Now ExtraBold'), local('TimesNow-ExtraBold'),
+        url('../font/TimesNow-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('../font/TimesNow-ExtraBold.woff2') format('woff2'),
+        url('../font/TimesNow-ExtraBold.woff') format('woff'),
+        url('../font/TimesNow-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Times Now';
+    src: url('../font/TimesNow-ExtraBoldItalic.eot');
+    src: local('Times Now ExtraBold Italic'), local('TimesNow-ExtraBoldItalic'),
+        url('../font/TimesNow-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../font/TimesNow-ExtraBoldItalic.woff2') format('woff2'),
+        url('../font/TimesNow-ExtraBoldItalic.woff') format('woff'),
+        url('../font/TimesNow-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Times Now';
+    src: url('../font/TimesNow-Light.eot');
+    src: local('Times Now Light'), local('TimesNow-Light'),
+        url('../font/TimesNow-Light.eot?#iefix') format('embedded-opentype'),
+        url('../font/TimesNow-Light.woff2') format('woff2'),
+        url('../font/TimesNow-Light.woff') format('woff'),
+        url('../font/TimesNow-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
 
 :root {
+    --font-family-primary: 'Helvetica Neue', sans-serif;
     --font-family-secondary: "Times Now", serif;
-    --font-family-primary: "Helvetica Neue Web", sans-serif;
     --primary-color: #053573;
 
+}
+
+.font-primary {
+    font: 100 5.6rem / 1 var(--font-family-primary);
+    letter-spacing: -.056rem;
+}
+
+.font-para {
+    font-family: 'Helvetica Neue';
+    font-weight: 100;
+    letter-spacing: .040rem;
+    /* line-height: 1.35; */
+}
+
+.fw-300 {
+    font-weight: 300;
+}
+
+.fw-200 {
+    font-weight: 200;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.fw-400 {
+    font-weight: 400;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+
+.fw-800 {
+    font-weight: 800;
+}
+
+.font-secondary {
+    font: 100 italic 6rem/.83 var(--font-family-secondary);
+    letter-spacing: -.12rem;
 }
 
 
@@ -66,6 +258,10 @@ body {
 
 .primary-clr {
     color: var(--primary-color);
+}
+
+.light-primary-bg {
+    background-color: #0535738e;
 }
 
 .fs-12 {
@@ -144,6 +340,17 @@ body {
     font-size: 48px;
 }
 
+@media (max-width: 576px) {
+
+    .fs-48 {
+        font-size: 38px !important;
+    }
+
+    .fs-14{
+        font-size: 12px !important;
+    }
+}
+
 .fs-50 {
     font-size: 50px;
 }
@@ -156,8 +363,18 @@ body {
     font-size: 70px;
 }
 
+
+
 .line-heigh26 {
     line-height: 26px;
+}
+
+.line-heigh30 {
+    line-height: 30px;
+}
+
+.line-heigh34 {
+    line-height: 34px;
 }
 
 .custom-link {
@@ -214,8 +431,8 @@ body {
     color: #fff !important;
     font-family: var(--font-family-primary);
     text-decoration: none;
-    font-weight: 300;
-    font-size: 0.9rem;
+    font-weight: 500;
+    font-size: 0.8rem;
 }
 
 .banner-container {
@@ -233,9 +450,10 @@ body {
 .banner,
 .department-banner-content,
 .services-banner-content,
-.contact-banner-content {
+.contact-banner-content,
+.ethic-banner-content {
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 20%;
     transform: translate(-20%, -40%);
 }
@@ -244,7 +462,7 @@ body {
 /* ============== Department BAnner ============= */
 .banner-text {
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 20%;
     transform: translate(-20%, -40%);
 
@@ -397,4 +615,21 @@ textarea {
 
 ::placeholder {
     color: #ffffff5e !important;
+}
+
+/* ======================= ethic-banner ================== */
+.ethic-banner {
+    background: url('../images/banner/ethics.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.ethic-content {
+    height: 100vh;
+    background: url('../images/ethics/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
