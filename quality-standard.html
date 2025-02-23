@@ -635,11 +635,11 @@
 
 
      <!-- ============================ Blog Start ================================= -->
-     <section class="blog-section py-5">
+    <section class="blog-section py-5">
         <div class="container">
             <div class="row">
-                <div class="col-3">
-                    <p class="fs-38 text-white font-para line-heigh34">STAY UPDATED WITH THE LATEST
+                <div class="col-md-3 col-12 mb-5 mb-md-0">
+                    <p class="fs-38 text-white font-secondary line-heigh34">STAY UPDATED WITH THE LATEST
                         BLOGS</p>
 
                     <div class="row align-items-center mt-3">
@@ -656,35 +656,49 @@
                     </div>
                 </div>
 
-                <div class="col-9">
-                    <div class="row">
-                        <div class="col-4">
-                            <div class="card bg-black h-100">
-                                <img src="assets/images/blog/1.png" class="card-img-top" alt="Expertise Image">
-                                <div class="card-body text-white">
-                                    <p class="card-title font-para fw-500">Expertise Title</p>
-                                    <p class="card-text fw-300 font-para fs-14">A short description of the expertise.</p>
+                <div class="col-md-9 col-12">
+                    <div class="swiper swiper-blog">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="card bg-black h-100">
+                                    <img src="assets/images/blog/1.png" class="card-img-top" alt="Blog Image">
+                                    <div class="card-body text-white">
+                                        <p class="card-title font-para fw-500">Blog Title 1</p>
+                                        <p class="card-text fw-400 font-para fs-14">A short description of the blog.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card bg-black h-100">
+                                    <img src="assets/images/blog/2.png" class="card-img-top" alt="Blog Image">
+                                    <div class="card-body text-white">
+                                        <p class="card-title font-para fw-500">Blog Title 2</p>
+                                        <p class="card-text fw-400 font-para fs-14">A short description of the blog.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card bg-black h-100">
+                                    <img src="assets/images/blog/3.png" class="card-img-top" alt="Blog Image">
+                                    <div class="card-body text-white">
+                                        <p class="card-title font-para fw-500">Blog Title 3</p>
+                                        <p class="card-text fw-400 font-para fs-14">A short description of the blog.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card bg-black h-100">
+                                    <img src="assets/images/blog/2.png" class="card-img-top" alt="Blog Image">
+                                    <div class="card-body text-white">
+                                        <p class="card-title font-para fw-500">Blog Title 4</p>
+                                        <p class="card-text fw-400 font-para fs-14">A short description of the blog.</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4">
-                            <div class="card bg-black h-100">
-                                <img src="assets/images/blog/2.png" class="card-img-top" alt="Expertise Image">
-                                <div class="card-body text-white">
-                                    <p class="card-title font-para fw-500">Expertise Title</p>
-                                    <p class="card-text fw-300 font-para fs-14">A short description of the expertise.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="card bg-black h-100">
-                                <img src="assets/images/blog/3.png" class="card-img-top" alt="Expertise Image">
-                                <div class="card-body text-white">
-                                    <p class="card-title font-para fw-500">Expertise Title</p>
-                                    <p class="card-text fw-300 font-para fs-14">A short description of the expertise.</p>
-                                </div>
-                            </div>
-                        </div>
+                        <!-- Custom Navigation -->
+                        <div class="swiper-button-next custom-swiper-button"></div>
+                        <div class="swiper-button-prev custom-swiper-button"></div>
                     </div>
                 </div>
 
@@ -696,25 +710,24 @@
     <!-- ============================ Subscribe start ========================= -->
     <section class="subscribe py-5 bg-white text-black">
         <div class="container">
-            <div class="row justify-content-between">
-                <div class="col-5">
-                    <p class="fs-44 font-secondary text-uppercase">The <span class="primary-clr">JS
-                            Diamond</span> Journal</p>
-                    <p class="font-para fw-500">
-                        We keep your data private and only share it with third parties that make this service
-                        possible. Read our Confidentiality Policy for more information.
+            <div class="row justify-content-between align-items-center">
+                <div class="col-md-4 col-12 mb-3 mb-md-0">
+                    <p class="fs-48 font-primary text-uppercase">Get the</p>
+                    <p class="fs-48 font-secondary text-uppercase"> Latest News</p>
+
+                </div>
+                <div class="col-md-4 col-12 mb-3 mb-md-0">
+                    <p class="fs-6 forn-para mb-0">Be the first to receive the latest news on our brand, products and
+                        upcoming events.
                     </p>
                 </div>
-                <div class="col-5">
-                    <p class="fs-6 old-standard-tt-regular text-uppercase">Your exclusive source for international
-                        diamond news, insights, and updates
-                    </p>
+                <div class="col-md-4 col-12">
 
                     <input type="email"
-                        class="subscribe-input p-2 border-top-0 border-start-0 border-end-0 w-100 border-dark primary-font"
+                        class="subscribe-input bg-light text-dark p-2 border-top-0 border-start-0 border-end-0 w-100 border-dark primary-font"
                         placeholder="Email *">
 
-                    <button class="btn btn-theme w-100 mt-3 font-para fw-500">Subscribe</button>
+                    <button class="btn btn-theme w-100 mt-3 font-para fw-500 bg-dark text-light">Subscribe</button>
 
                 </div>
             </div>
@@ -728,7 +741,7 @@
             <div class="logo text-center">
                 <img src="assets/images/logo/navbar-logo.svg" class="img-fluid" alt="">
             </div>
-            <div class="footer-menu d-flex justify-content-center font-para fw-300">
+            <div class="footer-menu d-flex justify-content-center font-para fw-400 fs-14">
                 <ul>
                     <li>
                         123, Patva Builing, Surat
@@ -746,7 +759,7 @@
                 </ul>
             </div>
 
-            <div class="footer-socail d-flex justify-content-center">
+            <div class="footer-socail d-flex justify-content-center ">
                 <ul>
                     <li>
                         <a href="" class="fs-4"><i class="bi bi-instagram"></i></a>
@@ -760,23 +773,21 @@
                 </ul>
             </div>
 
-            <div class="copyright pt-2 d-flex justify-content-between align-items-center">
-                <p class="font-para fw-300 m-0">Copyright 2024 Js Diamond all rights reserved</p>
-                <a href="" class="btn btn-custom font-para fw-500">Contact Us</a>
-            </div>
         </div>
         <hr>
-        <div class="container-fluid">
-            <div class="row justify-content-evenly align-items-center font-para fw-300">
-                <div class="col text-center"><a href="" class="custom-link">CopyRights</a></div>
-                <div class="col text-center"><a href="" class="custom-link">Privacy Policy</a></div>
-                <div class="col text-center"><a href="" class="custom-link">Joins</a></div>
-                <div class="col text-center"><a href="" class="custom-link">J</a></div>
-                <div class="col text-center"><a href="" class="custom-link">Legal Notice</a></div>
-                <div class="col text-center"><a href="" class="custom-link">Terms & Condition</a></div>
-                <div class="col text-center"><a href="" class="custom-link">Credits</a></div>
+        <div class="container">
+
+            <div class="copyright pt-2 row justify-content-between align-items-center">
+                <div class="col-12 col-md-6">
+                    <p class="font-para fw-400 m-0 fs-14">Copyright 2024 JS Diamond all rights reserved</p>
+                </div>
+
+                <div class="col-12 col-md-6 mt-3 mt-md-0 text-md-end">
+                    <a href="" class="font-para fw-500 fs-14 text-decoration-none">Business Ethics Policy</a>
+                </div>
             </div>
         </div>
+
     </footer>
 
 

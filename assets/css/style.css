@@ -162,10 +162,8 @@
 }
 
 .font-para {
-    font-family: 'Helvetica Neue';
-    font-weight: 100;
-    letter-spacing: .040rem;
-    /* line-height: 1.35; */
+    font-family: var(--font-family-primary) !important;
+    font-weight: 400 !important;
 }
 
 .fw-300 {
@@ -246,6 +244,27 @@
 body {
     background-color: #000;
     color: #fff;
+}
+
+
+.custom-swiper-button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-swiper-button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 20px;
 }
 
 .primary-font {
@@ -346,10 +365,11 @@ body {
         font-size: 38px !important;
     }
 
-    .fs-14{
+    .fs-14 {
         font-size: 12px !important;
     }
 }
+
 
 .fs-50 {
     font-size: 50px;
@@ -419,15 +439,18 @@ body {
 
 
 /* ============== Navbar ============= */
-.custom-navbar ul {
+.custom-navbar ul,
+.mobile-custom-navbar ul {
     list-style-type: none !important;
 }
 
-.custom-navbar ul {
+.custom-navbar ul,
+.mobile-custom-navbar ul {
     list-style-type: none !important;
 }
 
-.custom-navbar ul li a {
+.custom-navbar ul li a,
+.mobile-custom-navbar ul li a {
     color: #fff !important;
     font-family: var(--font-family-primary);
     text-decoration: none;
@@ -456,6 +479,20 @@ body {
     top: 50%;
     left: 20%;
     transform: translate(-20%, -40%);
+}
+
+@media (max-width: 576px) {
+
+    .banner,
+    .department-banner-content,
+    .services-banner-content,
+    .contact-banner-content,
+    .ethic-banner-content {
+        position: absolute;
+        bottom: 0px;
+        left: 10%;
+        transform: translate(-10%);
+    }
 }
 
 
@@ -518,6 +555,11 @@ footer ul {
 .subscribe-input:focus {
     outline: none;
     box-shadow: none;
+}
+
+.subscribe-input::placeholder {
+    color: #888 !important;
+    font-weight: 400;
 }
 
 /* ================================== experties-banner =========================== */
