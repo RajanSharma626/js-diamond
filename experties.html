@@ -15,7 +15,22 @@
     <!-- ==== Swipper CSS CDN ==== -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
+    <style>
+        .custom-swiper-button {
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
+        .custom-swiper-button::after {
+            color: white;
+            font-size: 20px;
+        }
+    </style>
 </head>
 
 <body>
@@ -25,7 +40,7 @@
         <div class="relative experties-banner">
 
             <!-- Navbar Start -->
-            <nav class="custom-navbar p-3">
+            <nav class="custom-navbar p-3 d-none d-md-block">
                 <div class="row justify-content-evenly align-items-center">
                     <div class="col-5">
                         <ul class="mb-2 d-flex justify-content-evenly align-items-center">
@@ -59,6 +74,23 @@
                                 <a href="contact.html">Contact US</a>
                             </li>
                         </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- mobile navbar -->
+            <nav class="mobile-custom-navbar p-3 d-md-none">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-6">
+                        <ul class="ps-0">
+                            <li class="nav-item">
+                                <i class="bi bi-list text-white fs-48"></i>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-6 text-end">
+                        <a href="index.html" class="text-end"><img src="assets/images/logo/mobile-logo.svg"
+                                class="img-fluid" alt="" width="45px"></a>
                     </div>
                 </div>
             </nav>
@@ -107,20 +139,20 @@
     <section class="section py-5">
         <div class="container">
             <div class="row justify-content-evenly">
-                <div class="col-4">
-                    <p class="fw-300 font-para fs-14 fs-14 ">
+                <div class="col-md-4 col-12">
+                    <p class="fw-300 font-para fs-14">
                         At JS Diamond, each gem is meticulously analyzed by two skilled sorters, who evaluate color,
                         fluorescence, cut, and clarity using the most rigorous standards.
                     </p>
                 </div>
-                <div class="col-4">
-                    <p class="fw-300 font-para fs-14 fs-14">
+                <div class="col-md-4 col-12">
+                    <p class="fw-300 font-para fs-14">
                         carefully examined in our laboratory by expert engineers using high-precision technology,
                         ensuring unparalleled quality and authenticity for our clients.
                     </p>
                 </div>
-                <div class="col-4">
-                    <p class="fw-300 font-para fs-14 fs-14">
+                <div class="col-md-4 col-12">
+                    <p class="fw-300 font-para fs-14">
                         we prioritize responsiveness to ensure that our inventory is consistently adjusted to meet each
                         customer’s unique needs and specifications.
                     </p>
@@ -133,22 +165,22 @@
     <!-- ==================================== Assortment Section Start ============================== -->
     <section class="assortment">
         <div class="container-fluid">
-            <div class="row py-5">
-                <div class="col-md-6 col-12 p-5">
-                    <p class="fs-48 text-uppercase font-primary mb-0 text-center">Assortment</p>
-                    <p class="fw-300 font-para fs-14 p-5">
+            <div class="row py-5 flex-wrap-reverse">
+                <div class="col-md-6 col-12 p-md-5">
+                    <p class="fs-48 text-uppercase font-primary mb-md-0 text-md-center">Assortment</p>
+                    <p class="fw-300 font-para fs-14 p-md-5">
                         At JS Diamond, our expertise in diamond assortment ensures that every gem meets the highest
                         standards of quality and beauty. Our sorters meticulously evaluate color, clarity, cut, and
                         fluorescence to deliver diamonds that meet your exact specifications.
                     </p>
 
-                    <p class="fw-300 font-para fs-14 p-5">
+                    <p class="fw-300 font-para fs-14 p-md-5">
                         By leveraging cutting-edge technology and expert insights, we offer tailored assortments that
                         align with diverse customer requirements. Our dedication to precision guarantees that each gem
                         in your selection is flawless and ready to shine.
                     </p>
                 </div>
-                <div class="col-md-6 col-12 primary-bg p-5 text-center">
+                <div class="col-md-6 col-12 primary-bg p-5 text-center mb-3 mb-md-0">
                     <div class="p-5">
 
                         <img src="assets/images/experties/1.png" class="img-fluid" alt="">
@@ -163,19 +195,19 @@
     <section class="assortment">
         <div class="container-fluid">
             <div class="row py-5">
-                <div class="col-md-6 col-12 p-5 text-center">
+                <div class="col-md-6 col-12 p-md-5 text-center mb-3 mb-md-0">
                     <img src="assets/images/experties/2.png" class="img-fluid" alt="">
                 </div>
 
-                <div class="col-md-6 col-12 p-5 ">
-                    <p class="text-uppercase font-primary mb-0 text-center fs-48">Expertise in In-House R&D</p>
-                    <p class="fw-300 font-para fs-14 p-5">
+                <div class="col-md-6 col-12 p-md-5 ">
+                    <p class="text-uppercase font-primary mb-md-0 text-md-center fs-48">Expertise in In-House R&D</p>
+                    <p class="fw-300 font-para fs-14 p-md-5">
                         Our in-house Research and Development team drives innovation to stay ahead in the diamond
                         industry. From improving cutting techniques to designing sustainable solutions, we continually
                         enhance our processes to offer superior diamonds.
                     </p>
 
-                    <p class="fw-300 font-para fs-14 p-5">
+                    <p class="fw-300 font-para fs-14 p-md-5">
                         Through R&D, we ensure that our diamonds meet evolving industry standards while addressing
                         client needs with creativity and innovation. At JS Diamond, innovation and craftsmanship go hand
                         in hand to deliver exceptional results.
@@ -189,22 +221,22 @@
     <!-- ==================================== Inventory Section Start ============================== -->
     <section class="inventory">
         <div class="container-fluid">
-            <div class="row py-5">
-                <div class="col-md-6 col-12 p-5 ">
-                    <p class="text-uppercase font-primary mb-0 text-center fs-48">Inventory Management</p>
-                    <p class="fw-300 font-para fs-14 p-5">
+            <div class="row py-5 flex-wrap-reverse">
+                <div class="col-md-6 col-12 p-md-5 ">
+                    <p class="text-uppercase font-primary mb-md-0 text-md-center fs-48">Inventory Management</p>
+                    <p class="fw-300 font-para fs-14 p-md-5">
                         JS Diamond's inventory management system is designed to ensure seamless operations and quick
                         adaptability to market demands. We maintain a well-organized and extensive inventory that
                         enables us to respond promptly to customer needs.
                     </p>
 
-                    <p class="fw-300 font-para fs-14 p-5">
+                    <p class="fw-300 font-para fs-14 p-md-5">
                         By integrating advanced logistics and real-time tracking systems, we optimize high-volume
                         imports and exports. Our commitment to operational excellence ensures that our inventory aligns
                         perfectly with your business goals.
                     </p>
                 </div>
-                <div class="col-md-6 col-12 p-5 text-center">
+                <div class="col-md-6 col-12 p-md-5 mb-md-0 mb-3 text-center">
 
                     <img src="assets/images/experties/3.png" class="img-fluid" alt="">
 
@@ -218,19 +250,19 @@
     <section class="technologies">
         <div class="container-fluid">
             <div class="row py-5">
-                <div class="col-md-6 col-12 p-5 text-center">
+                <div class="col-md-6 col-12 p-md-5 mb-3 mb-md-0 text-center">
                     <img src="assets/images/experties/4.png" class="img-fluid" alt="">
                 </div>
 
-                <div class="col-md-6 col-12 p-5 ">
-                    <p class="text-uppercase font-primary mb-0 text-center fs-48">Technologies</p>
-                    <p class="fw-300 font-para fs-14 p-5">
+                <div class="col-md-6 col-12 p-md-5 ">
+                    <p class="text-uppercase font-primary mb-md-0 text-md-center fs-48">Technologies</p>
+                    <p class="fw-300 font-para fs-14 p-md-5">
                         JS Diamond leverages cutting-edge technologies to revolutionize the diamond industry. From
                         high-precision analysis tools to advanced logistics systems, we integrate innovation into every
                         aspect of our operations.
                     </p>
 
-                    <p class="fw-300 font-para fs-14 p-5">
+                    <p class="fw-300 font-para fs-14 p-md-5">
                         Our state-of-the-art technology ensures accuracy in sorting, quality control, and inventory
                         management. By embracing the latest advancements, we deliver exceptional products and services
                         with unmatched efficiency.
@@ -244,10 +276,10 @@
     <!-- ==================================== Product Section Start ============================== -->
     <section class="product">
         <div class="container-fluid">
-            <div class="row py-5">
-                <div class="col-md-6 col-12 p-5 ">
-                    <h2 class="text-uppercase font-primary mb-0 text-center fs-48">Inventory Management</h2>
-                    <p class="fw-300 font-para fs-14 p-5">
+            <div class="row py-5 flex-wrap-reverse">
+                <div class="col-md-6 col-12 p-md-5 ">
+                    <h2 class="text-uppercase font-primary mb-md-0 text-md-center fs-48">Inventory Management</h2>
+                    <p class="fw-300 font-para fs-14 p-md-5">
                         At JS Diamond, our commitment to delivering unparalleled diamond products is rooted in
                         precision, quality, and innovation. Each diamond undergoes a meticulous process, ensuring its
                         brilliance, durability, and authenticity. Our skilled artisans and advanced technology come
@@ -255,13 +287,13 @@
                         masterpieces that exceed global standards.
                     </p>
 
-                    <p class="fw-300 font-para fs-14 p-5">
+                    <p class="fw-300 font-para fs-14 p-md-5">
                         We prioritize excellence in every step, from sourcing the finest natural diamonds to creating
                         pieces that captivate. Whether for jewelry or investment, our diamonds are a testament to our
                         dedication to superior craftsmanship and customer satisfaction.
                     </p>
                 </div>
-                <div class="col-md-6 col-12 p-5 text-center">
+                <div class="col-md-6 col-12 p-md-5 mb-3 mb-md-0 text-center">
 
                     <img src="assets/images/experties/5.png" class="img-fluid" alt="">
 
@@ -275,11 +307,12 @@
     <section class="blog-section py-5">
         <div class="container">
             <div class="row">
-                <div class="col-3">
-                    <p class="fs-38 text-white font-para line-heigh34">STAY UPDATED WITH THE LATEST
+                <div class="col-md-3 col-12 mb-5 mb-md-0">
+                    <p class="fs-38 text-white font-secondary line-heigh34" data-aos="fade-up" data-aos-duration="1500">
+                        STAY UPDATED WITH THE LATEST
                         BLOGS</p>
 
-                    <div class="row align-items-center mt-3">
+                    <div class="row align-items-center mt-3" data-aos="fade-up" data-aos-duration="1500">
                         <div class="col-2">
                             <a href="" class="text-decoration-none">
                                 <div class="bg-secondary padding-1px"></div>
@@ -293,38 +326,49 @@
                     </div>
                 </div>
 
-                <div class="col-9">
-                    <div class="row">
-                        <div class="col-4">
-                            <div class="card bg-black h-100">
-                                <img src="assets/images/blog/1.png" class="card-img-top" alt="Expertise Image">
-                                <div class="card-body text-white">
-                                    <p class="card-title font-para fw-500">Expertise Title</p>
-                                    <p class="card-text fw-300 font-para fs-14">A short description of the expertise.
-                                    </p>
+                <div class="col-md-9 col-12">
+                    <div class="swiper swiper-blog">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" data-aos="fade-up" data-aos-duration="1500">
+                                <div class="card bg-black h-100">
+                                    <img src="assets/images/blog/1.png" class="card-img-top" alt="Blog Image">
+                                    <div class="card-body text-white">
+                                        <p class="card-title font-para fw-500">Blog Title 1</p>
+                                        <p class="card-text fw-400 font-para fs-14">A short description of the blog.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" data-aos="fade-up" data-aos-duration="1500">
+                                <div class="card bg-black h-100">
+                                    <img src="assets/images/blog/2.png" class="card-img-top" alt="Blog Image">
+                                    <div class="card-body text-white">
+                                        <p class="card-title font-para fw-500">Blog Title 2</p>
+                                        <p class="card-text fw-400 font-para fs-14">A short description of the blog.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" data-aos="fade-up" data-aos-duration="1500">
+                                <div class="card bg-black h-100">
+                                    <img src="assets/images/blog/3.png" class="card-img-top" alt="Blog Image">
+                                    <div class="card-body text-white">
+                                        <p class="card-title font-para fw-500">Blog Title 3</p>
+                                        <p class="card-text fw-400 font-para fs-14">A short description of the blog.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" data-aos="fade-up" data-aos-duration="1500">
+                                <div class="card bg-black h-100">
+                                    <img src="assets/images/blog/2.png" class="card-img-top" alt="Blog Image">
+                                    <div class="card-body text-white">
+                                        <p class="card-title font-para fw-500">Blog Title 4</p>
+                                        <p class="card-text fw-400 font-para fs-14">A short description of the blog.</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4">
-                            <div class="card bg-black h-100">
-                                <img src="assets/images/blog/2.png" class="card-img-top" alt="Expertise Image">
-                                <div class="card-body text-white">
-                                    <p class="card-title font-para fw-500">Expertise Title</p>
-                                    <p class="card-text fw-300 font-para fs-14">A short description of the expertise.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="card bg-black h-100">
-                                <img src="assets/images/blog/3.png" class="card-img-top" alt="Expertise Image">
-                                <div class="card-body text-white">
-                                    <p class="card-title font-para fw-500">Expertise Title</p>
-                                    <p class="card-text fw-300 font-para fs-14">A short description of the expertise.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                        <!-- Custom Navigation -->
+                        <div class="swiper-button-next custom-swiper-button"></div>
+                        <div class="swiper-button-prev custom-swiper-button"></div>
                     </div>
                 </div>
 
@@ -335,26 +379,25 @@
 
     <!-- ============================ Subscribe start ========================= -->
     <section class="subscribe py-5 bg-white text-black">
-        <div class="container">
-            <div class="row justify-content-between">
-                <div class="col-5">
-                    <p class="fs-44 font-secondary text-uppercase">The <span class="primary-clr">JS
-                            Diamond</span> Journal</p>
-                    <p class="font-para fw-500">
-                        We keep your data private and only share it with third parties that make this service
-                        possible. Read our Confidentiality Policy for more information.
+        <div class="container py-5">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-md-4 col-12 mb-3 mb-md-0">
+                    <p class="fs-48 font-primary text-uppercase">Get the</p>
+                    <p class="fs-48 font-secondary text-uppercase"> Latest News</p>
+
+                </div>
+                <div class="col-md-4 col-12 mb-3 mb-md-0">
+                    <p class="fs-6 forn-para mb-0">Be the first to receive the latest news on our brand, products and
+                        upcoming events.
                     </p>
                 </div>
-                <div class="col-5">
-                    <p class="fs-6 old-standard-tt-regular text-uppercase">Your exclusive source for international
-                        diamond news, insights, and updates
-                    </p>
+                <div class="col-md-4 col-12">
 
                     <input type="email"
-                        class="subscribe-input p-2 border-top-0 border-start-0 border-end-0 w-100 border-dark primary-font"
+                        class="subscribe-input bg-light text-dark p-2 border-top-0 border-start-0 border-end-0 w-100 border-dark primary-font"
                         placeholder="Email *">
 
-                    <button class="btn btn-theme w-100 mt-3 font-para fw-500">Subscribe</button>
+                    <button class="btn btn-theme w-100 mt-3 font-para fw-500 bg-dark text-light">Subscribe</button>
 
                 </div>
             </div>
@@ -368,8 +411,8 @@
             <div class="logo text-center">
                 <img src="assets/images/logo/navbar-logo.svg" class="img-fluid" alt="">
             </div>
-            <div class="footer-menu d-flex justify-content-center font-para fw-300">
-                <ul>
+            <div class="footer-menufont-para d-flex justify-content-center fw-400 fs-14">
+                <ul class="d-flex justify-content-center flex-wrap">
                     <li>
                         123, Patva Builing, Surat
                     </li>
@@ -377,16 +420,17 @@
                         Gujrat, India
                     </li>
                     <li>
-                        <a href="tel:+91 1234567890">+91 12345 67890</a>
+                        <a class="text-decoration-none text-white" href="tel:+91 1234567890">+91 12345 67890</a>
                     </li>
 
                     <li>
-                        <a href="">jsdiamond@Gmail.com</a>
+                        <a class="text-decoration-none text-white"
+                            href="mailto:jsdiamond@Gmail.com">jsdiamond@Gmail.com</a>
                     </li>
                 </ul>
             </div>
 
-            <div class="footer-socail d-flex justify-content-center">
+            <div class="footer-socail d-flex justify-content-center ">
                 <ul>
                     <li>
                         <a href="" class="fs-4"><i class="bi bi-instagram"></i></a>
@@ -400,23 +444,22 @@
                 </ul>
             </div>
 
-            <div class="copyright pt-2 d-flex justify-content-between align-items-center">
-                <p class="font-para fw-300 m-0">Copyright 2024 Js Diamond all rights reserved</p>
-                <a href="" class="btn btn-custom font-para fw-500">Contact Us</a>
-            </div>
         </div>
         <hr>
-        <div class="container-fluid">
-            <div class="row justify-content-evenly align-items-center font-para fw-300">
-                <div class="col text-center"><a href="" class="custom-link">CopyRights</a></div>
-                <div class="col text-center"><a href="" class="custom-link">Privacy Policy</a></div>
-                <div class="col text-center"><a href="" class="custom-link">Joins</a></div>
-                <div class="col text-center"><a href="" class="custom-link">J</a></div>
-                <div class="col text-center"><a href="" class="custom-link">Legal Notice</a></div>
-                <div class="col text-center"><a href="" class="custom-link">Terms & Condition</a></div>
-                <div class="col text-center"><a href="" class="custom-link">Credits</a></div>
+        <div class="container">
+
+            <div class="copyright pt-2 row justify-content-between align-items-center">
+                <div class="col-12 col-md-6">
+                    <p class="font-para fw-400 m-0 fs-14">Copyright 2024 JS Diamond all rights reserved</p>
+                </div>
+
+                <div class="col-12 col-md-6 mt-3 mt-md-0 text-md-end">
+                    <a href="ethics-policy.html" class="font-para fw-500 fs-14 text-decoration-none">Business Ethics
+                        Policy</a>
+                </div>
             </div>
         </div>
+
     </footer>
 
 

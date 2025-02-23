@@ -25,7 +25,7 @@
         <div class="relative contact-banner">
 
             <!-- Navbar Start -->
-            <nav class="custom-navbar p-3">
+            <nav class="custom-navbar p-3 d-none d-md-block">
                 <div class="row justify-content-evenly align-items-center">
                     <div class="col-5">
                         <ul class="mb-2 d-flex justify-content-evenly align-items-center">
@@ -63,11 +63,28 @@
                 </div>
             </nav>
 
+            <!-- mobile navbar -->
+            <nav class="mobile-custom-navbar p-3 d-md-none">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-6">
+                        <ul class="ps-0">
+                            <li class="nav-item">
+                                <i class="bi bi-list text-white fs-48"></i>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-6 text-end">
+                        <a href="index.html" class="text-end"><img src="assets/images/logo/mobile-logo.svg"
+                                class="img-fluid" alt="" width="45px"></a>
+                    </div>
+                </div>
+            </nav>
+
             <!-- Banner Start -->
             <div class="contact-banner-content">
                 <div class="container">
                     <div class="row">
-                        <div class="col-7">
+                        <div class="col-md-7 col-12">
                             <p class="fs-48 text-white font-primary mb-0 text-uppercase lh-1">
                                 Want to delve further into
                             </p>
@@ -101,23 +118,23 @@
                         as soon as possible.</p>
                 </div>
 
-                <div class="col-8 py-5">
+                <div class="col-md-8 col-12 py-5">
                     <div class="row ">
-                        <div class="col-6 mb-3">
+                        <div class="col-md-6 col-12 mb-3">
                             <label for="" class="form-label">First Name</label>
                             <input type="text" class="form-control" placeholder="First Name">
                         </div>
-                        <div class="col-6 mb-3">
+                        <div class="col-md-6 col-12 mb-3">
                             <label for="" class="form-label">Last Name</label>
                             <input type="text" class="form-control" placeholder="Last Name">
                         </div>
 
-                        <div class="col-6 mb-3">
+                        <div class="col-md-6 col-12 mb-3">
                             <label for="" class="form-label">Company</label>
                             <input type="text" class="form-control" placeholder="Company">
                         </div>
 
-                        <div class="col-6 mb-3">
+                        <div class="col-md-6 col-12 mb-3">
                             <label for="" class="form-label">Email</label>
                             <input type="email" class="form-control" placeholder="Enter Email">
                         </div>
@@ -145,7 +162,7 @@
                             </div>
                         </div>
 
-                        <div class="col-6 m-auto">
+                        <div class="col-md-6 col-12 m-auto">
                             <button class="btn btn-custom font-primary mb-0 fw-500 fs-16 w-100">Submit</button>
                         </div>
                     </div>
@@ -157,15 +174,15 @@
 
 
 
-
+    <hr>
     <!-- ============================ Footer Start ================================= -->
     <footer class="footer pt-5 pb-4">
         <div class="container">
             <div class="logo text-center">
                 <img src="assets/images/logo/navbar-logo.svg" class="img-fluid" alt="">
             </div>
-            <div class="footer-menu d-flex justify-content-center font-para fw-300">
-                <ul>
+            <div class="footer-menufont-para d-flex justify-content-center fw-400 fs-14">
+                <ul class="d-flex justify-content-center flex-wrap">
                     <li>
                         123, Patva Builing, Surat
                     </li>
@@ -173,16 +190,17 @@
                         Gujrat, India
                     </li>
                     <li>
-                        <a href="tel:+91 1234567890">+91 12345 67890</a>
+                        <a class="text-decoration-none text-white" href="tel:+91 1234567890">+91 12345 67890</a>
                     </li>
 
                     <li>
-                        <a href="">jsdiamond@Gmail.com</a>
+                        <a class="text-decoration-none text-white"
+                            href="mailto:jsdiamond@Gmail.com">jsdiamond@Gmail.com</a>
                     </li>
                 </ul>
             </div>
 
-            <div class="footer-socail d-flex justify-content-center">
+            <div class="footer-socail d-flex justify-content-center ">
                 <ul>
                     <li>
                         <a href="" class="fs-4"><i class="bi bi-instagram"></i></a>
@@ -196,23 +214,22 @@
                 </ul>
             </div>
 
-            <div class="copyright pt-2 d-flex justify-content-between align-items-center">
-                <p class="font-para fw-300 m-0">Copyright 2024 Js Diamond all rights reserved</p>
-                <a href="" class="btn btn-custom font-para fw-500">Contact Us</a>
-            </div>
         </div>
         <hr>
-        <div class="container-fluid">
-            <div class="row justify-content-evenly align-items-center font-para fw-300">
-                <div class="col text-center"><a href="" class="custom-link">CopyRights</a></div>
-                <div class="col text-center"><a href="" class="custom-link">Privacy Policy</a></div>
-                <div class="col text-center"><a href="" class="custom-link">Joins</a></div>
-                <div class="col text-center"><a href="" class="custom-link">J</a></div>
-                <div class="col text-center"><a href="" class="custom-link">Legal Notice</a></div>
-                <div class="col text-center"><a href="" class="custom-link">Terms & Condition</a></div>
-                <div class="col text-center"><a href="" class="custom-link">Credits</a></div>
+        <div class="container">
+
+            <div class="copyright pt-2 row justify-content-between align-items-center">
+                <div class="col-12 col-md-6">
+                    <p class="font-para fw-400 m-0 fs-14">Copyright 2024 JS Diamond all rights reserved</p>
+                </div>
+
+                <div class="col-12 col-md-6 mt-3 mt-md-0 text-md-end">
+                    <a href="ethics-policy.html" class="font-para fw-500 fs-14 text-decoration-none">Business Ethics
+                        Policy</a>
+                </div>
             </div>
         </div>
+
     </footer>
 
 

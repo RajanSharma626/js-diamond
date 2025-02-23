@@ -15,6 +15,22 @@
     <!-- ==== Swipper CSS CDN ==== -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
+    <style>
+        .custom-swiper-button {
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .custom-swiper-button::after {
+            color: white;
+            font-size: 20px;
+        }
+    </style>
 
 </head>
 
@@ -25,7 +41,7 @@
         <div class="relative quality-standard-banner">
 
             <!-- Navbar Start -->
-            <nav class="custom-navbar p-3">
+            <nav class="custom-navbar p-3 d-none d-md-block">
                 <div class="row justify-content-evenly align-items-center">
                     <div class="col-5">
                         <ul class="mb-2 d-flex justify-content-evenly align-items-center">
@@ -63,11 +79,28 @@
                 </div>
             </nav>
 
+            <!-- mobile navbar -->
+            <nav class="mobile-custom-navbar p-3 d-md-none">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-6">
+                        <ul class="ps-0">
+                            <li class="nav-item">
+                                <i class="bi bi-list text-white fs-48"></i>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-6 text-end">
+                        <a href="index.html" class="text-end"><img src="assets/images/logo/mobile-logo.svg"
+                                class="img-fluid" alt="" width="45px"></a>
+                    </div>
+                </div>
+            </nav>
+
             <!-- Banner Start -->
             <div class="department-banner-content">
                 <div class="container">
                     <div class="row">
-                        <div class="col-10">
+                        <div class="col-md-10 col-12">
                             <p class="mb-0 fs-48 text-white font-primary mb-0 text-uppercase">
                                 UNRIVALLED QUALITY IN WHITE DIAMOND
                             </p>
@@ -107,18 +140,18 @@
     <section class="section py-5">
         <div class="container">
             <div class="row justify-content-evenly">
-                <div class="col-4">
+                <div class="col-md-4 col-12">
                     <p class="fw-300 font-para fs-14 ">
                         we perfect every diamond by removing impurities for unmatched brilliance and purity.
                     </p>
                 </div>
-                <div class="col-4">
+                <div class="col-md-4 col-12">
                     <p class="fw-300 font-para fs-14">
                         we specialize in sourcing diamonds with the highest colour grades for unmatched brilliance and
                         purity.
                     </p>
                 </div>
-                <div class="col-4">
+                <div class="col-md-4 col-12">
                     <p class="fw-300 font-para fs-14">
                         exceptional polish ensures unparalleled brilliance and light performance in every diamond.
                     </p>
@@ -132,7 +165,7 @@
     <section class="planning-quality-section ">
         <div class="container py-5">
             <div class="row">
-                <div class="col-6">
+                <div class="col-md-6 col-12">
                     <p class="fs-48 text-white font-primary mb-0">Cut & Symmetry</p>
 
                     <P class="fs-48 text-white font-secondary text-uppercase">brilliance meets
@@ -156,7 +189,7 @@
                     </div> -->
                 </div>
 
-                <div class="col-6">
+                <div class="col-md-6 col-12">
                     <div class="row">
                         <div class="col-6">
                             <div class="card bg-black h-100">
@@ -198,12 +231,13 @@
 
     <div class="container-fluid py-5">
         <div class="row">
-            <div class="col-6 p-5">
+            <div class="col-md-6 col-12 p-md-5 mb-3 mb-md-0">
                 <div class="card bg-black text-white">
                     <img src="assets/images/white-blank.png" class="card-img-top" alt="Expertise Image">
                     <div class="card-body">
                         <P class="card-title fs-3 fw-300 font-para">FX - Excellent</P>
-                        <p class="card-text fw-300 font-para fs-14">FX (Excellent) cut diamonds represent the highest standard of
+                        <p class="card-text fw-300 font-para fs-14">FX (Excellent) cut diamonds represent the highest
+                            standard of
                             craftsmanship. These diamonds are perfectly proportioned, ensuring exceptional light
                             reflection and breathtaking sparkle. With unparalleled attention to symmetry and angles,
                             FX-grade diamonds are the epitome of brilliance, delivering an extraordinary visual
@@ -211,12 +245,13 @@
                     </div>
                 </div>
             </div>
-            <div class="col-6 p-5">
+            <div class="col-md-6 col-12 p-md-5">
                 <div class="card bg-black text-white">
                     <img src="assets/images/white-blank.png" class="card-img-top" alt="Expertise Image">
                     <div class="card-body">
                         <P class="card-title fs-3 fw-300 font-para">VG/G - Very Good/Good</P>
-                        <p class="card-text fw-300 font-para fs-14">VG (Very Good) and G (Good) diamonds at JS Diamond maintain
+                        <p class="card-text fw-300 font-para fs-14">VG (Very Good) and G (Good) diamonds at JS Diamond
+                            maintain
                             exceptional quality with slightly relaxed proportions compared to FX. These stones still
                             reflect a high degree of light, ensuring impressive brilliance and symmetry.</p>
                     </div>
@@ -230,7 +265,7 @@
     <section class="planning-quality-section ">
         <div class="container py-5">
             <div class="row">
-                <div class="col-4">
+                <div class="col-md-4 col-12">
                     <p class="fs-48 text-white font-primary mb-0">Colour Range</p>
 
                     <h1 class="fs-48 text-white font-secondary text-uppercase">Quality standers</h1>
@@ -253,7 +288,7 @@
                     </div> -->
                 </div>
 
-                <div class="col-8">
+                <div class="col-8 d-none d-md-block">
                     <div class="row">
                         <div class="col-4">
                             <div class="card bg-black h-100">
@@ -297,6 +332,34 @@
                     </div>
                 </div>
 
+                <div class="col-12 d-md-none">
+                    <div class="swiper swiper-quality">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="card bg-black h-100">
+                                    <img src="assets/images/quality-slandered/1.png" class="card-img-top"
+                                        alt="Expertise Image">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card bg-black h-100">
+                                    <img src="assets/images/quality-slandered/1.png" class="card-img-top"
+                                        alt="Expertise Image">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card bg-black h-100">
+                                    <img src="assets/images/quality-slandered/1.png" class="card-img-top"
+                                        alt="Expertise Image">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Custom Navigation -->
+                        <div class="swiper-button-next custom-swiper-button"></div>
+                        <div class="swiper-button-prev custom-swiper-button"></div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -305,23 +368,25 @@
 
     <div class="container-fluid py-5">
         <div class="row">
-            <div class="col-6 p-5">
+            <div class="col-md-6 col-12 p-md-5 mb-3 mb-md-3">
                 <div class="card bg-black text-white">
                     <img src="assets/images/white-blank.png" class="card-img-top" alt="Expertise Image">
                     <div class="card-body">
                         <P class="card-title fs-3 fw-300 font-para">D-F Grade (Colourless)</P>
-                        <p class="card-text fw-300 font-para fs-14">D-F grade diamonds represent the pinnacle of color quality, showcasing no
+                        <p class="card-text fw-300 font-para fs-14">D-F grade diamonds represent the pinnacle of color
+                            quality, showcasing no
                             visible hue. These diamonds are meticulously graded on the GIA scale and are perfect for
                             those seeking the clearest, most radiant gems.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-6 p-5">
+            <div class="col-md-6 col-12 p-md-5">
                 <div class="card bg-black text-white">
                     <img src="assets/images/white-blank.png" class="card-img-top" alt="Expertise Image">
                     <div class="card-body">
                         <p class="card-title fs-3 fw-300 font-para">G-J Grade (Near-Colourless)</p>
-                        <p class="card-text fw-300 font-para fs-14">G-J diamonds at JS Diamond strike the perfect balance between brilliance
+                        <p class="card-text fw-300 font-para fs-14">G-J diamonds at JS Diamond strike the perfect
+                            balance between brilliance
                             and affordability. These near-colorless gems are carefully selected to maintain their
                             radiant appearance while offering a slightly warmer tone.</p>
                     </div>
@@ -335,7 +400,7 @@
     <section class="planning-quality-section ">
         <div class="container py-5">
             <div class="row">
-                <div class="col-4">
+                <div class="col-md-4 col-12">
                     <p class="fs-48 text-white font-primary mb-0">Polish</p>
 
                     <h1 class="fs-48 text-white font-secondary text-uppercase">Quality standers</h1>
@@ -358,7 +423,7 @@
                     </div> -->
                 </div>
 
-                <div class="col-8">
+                <div class="col-8 d-none d-md-block">
                     <div class="row">
                         <div class="col-4">
                             <div class="card bg-black h-100">
@@ -402,6 +467,34 @@
                     </div>
                 </div>
 
+                <div class="col-12 d-md-none">
+                    <div class="swiper swiper-quality">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="card bg-black h-100">
+                                    <img src="assets/images/quality-slandered/1.png" class="card-img-top"
+                                        alt="Expertise Image">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card bg-black h-100">
+                                    <img src="assets/images/quality-slandered/1.png" class="card-img-top"
+                                        alt="Expertise Image">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card bg-black h-100">
+                                    <img src="assets/images/quality-slandered/1.png" class="card-img-top"
+                                        alt="Expertise Image">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Custom Navigation -->
+                        <div class="swiper-button-next custom-swiper-button"></div>
+                        <div class="swiper-button-prev custom-swiper-button"></div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -410,22 +503,24 @@
 
     <div class="container-fluid py-5">
         <div class="row">
-            <div class="col-6 p-5">
+            <div class="col-md-6 col-12 p-md-5 mb-3 mb-md-0">
                 <div class="card bg-black text-white">
                     <img src="assets/images/white-blank.png" class="card-img-top" alt="Expertise Image">
                     <div class="card-body">
                         <h5 class="card-title fs-3 fw-300 font-para">Excellent Polish</h5>
-                        <p class="card-text fw-300 font-para fs-14">Every facet of the diamond is polished to a mirror-like finish, allowing
+                        <p class="card-text fw-300 font-para fs-14">Every facet of the diamond is polished to a
+                            mirror-like finish, allowing
                             light to pass through and reflect with extraordinary brilliance.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-6 p-5">
+            <div class="col-md-6 col-12 p-md-5">
                 <div class="card bg-black text-white">
                     <img src="assets/images/white-blank.png" class="card-img-top" alt="Expertise Image">
                     <div class="card-body">
                         <h5 class="card-title fs-3 fw-300 font-para">Very Good Polish</h5>
-                        <p class="card-text fw-300 font-para fs-14">Our very good polish diamonds are nearly flawless, with minor imperfections
+                        <p class="card-text fw-300 font-para fs-14">Our very good polish diamonds are nearly flawless,
+                            with minor imperfections
                             invisible to the naked eye, ensuring outstanding light performance.</p>
                     </div>
                 </div>
@@ -438,7 +533,7 @@
     <section class="planning-quality-section ">
         <div class="container py-5">
             <div class="row">
-                <div class="col-4">
+                <div class="col-md-4 col-12">
                     <p class="fs-48 text-white font-primary mb-0">Polish</p>
 
                     <h1 class="fs-48 text-white font-secondary text-uppercase">Quality standers</h1>
@@ -461,7 +556,7 @@
                     </div> -->
                 </div>
 
-                <div class="col-8">
+                <div class="col-8 d-none d-md-block">
                     <div class="row">
                         <div class="col-4">
                             <div class="card bg-black h-100">
@@ -505,6 +600,34 @@
                     </div>
                 </div>
 
+                <div class="col-12 d-md-none">
+                    <div class="swiper swiper-quality">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="card bg-black h-100">
+                                    <img src="assets/images/quality-slandered/1.png" class="card-img-top"
+                                        alt="Expertise Image">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card bg-black h-100">
+                                    <img src="assets/images/quality-slandered/1.png" class="card-img-top"
+                                        alt="Expertise Image">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card bg-black h-100">
+                                    <img src="assets/images/quality-slandered/1.png" class="card-img-top"
+                                        alt="Expertise Image">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Custom Navigation -->
+                        <div class="swiper-button-next custom-swiper-button"></div>
+                        <div class="swiper-button-prev custom-swiper-button"></div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -513,22 +636,24 @@
 
     <div class="container-fluid py-5">
         <div class="row">
-            <div class="col-6 p-5">
+            <div class="col-md-6 col-12 p-md-5 mb-3 mb-md-0">
                 <div class="card bg-black text-white">
                     <img src="assets/images/white-blank.png" class="card-img-top" alt="Expertise Image">
                     <div class="card-body">
                         <h5 class="card-title fs-3 fw-300 font-para">Precision Grading</h5>
-                        <p class="card-text fw-300 font-para fs-14">Each white diamond undergoes a precise grading process, ensuring it adheres
+                        <p class="card-text fw-300 font-para fs-14">Each white diamond undergoes a precise grading
+                            process, ensuring it adheres
                             to exacting standards of size, cut, and symmetry.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-6 p-5">
+            <div class="col-md-6 col-12 p-md-5 ">
                 <div class="card bg-black text-white">
                     <img src="assets/images/white-blank.png" class="card-img-top" alt="Expertise Image">
                     <div class="card-body">
                         <h5 class="card-title fs-3 fw-300 font-para">Industry Comparisons</h5>
-                        <p class="card-text fw-300 font-para fs-14">We continually compare our diamonds against top-tier competitors,
+                        <p class="card-text fw-300 font-para fs-14">We continually compare our diamonds against top-tier
+                            competitors,
                             guaranteeing that JS Diamond provides nothing less than world-class quality.</p>
                     </div>
                 </div>
@@ -544,8 +669,9 @@
                 <div class="col-12 text-center">
                     <p class="fs-3 fw-500 font-para">Goods Availablility Chart</p>
                 </div>
-                <div class="col-10 bg-dark p-5">
-                    <table class="table table-bordered text-center fw-500 font-secondary fs-4">
+                <div class="col-md-10 col-12 pt-0">
+                    <table class="table table-bordered text-center fw-500 font-secondary fst-normal fs-md-4 fs-6"
+                        data-aos="fade-in" data-aos-duration="2000">
                         <thead>
                             <tr>
                                 <th scope="col">Size</th>
@@ -634,15 +760,16 @@
 
 
 
-     <!-- ============================ Blog Start ================================= -->
+    <!-- ============================ Blog Start ================================= -->
     <section class="blog-section py-5">
         <div class="container">
             <div class="row">
                 <div class="col-md-3 col-12 mb-5 mb-md-0">
-                    <p class="fs-38 text-white font-secondary line-heigh34">STAY UPDATED WITH THE LATEST
+                    <p class="fs-38 text-white font-secondary line-heigh34" data-aos="fade-up" data-aos-duration="1500">
+                        STAY UPDATED WITH THE LATEST
                         BLOGS</p>
 
-                    <div class="row align-items-center mt-3">
+                    <div class="row align-items-center mt-3" data-aos="fade-up" data-aos-duration="1500">
                         <div class="col-2">
                             <a href="" class="text-decoration-none">
                                 <div class="bg-secondary padding-1px"></div>
@@ -659,7 +786,7 @@
                 <div class="col-md-9 col-12">
                     <div class="swiper swiper-blog">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide">
+                            <div class="swiper-slide" data-aos="fade-up" data-aos-duration="1500">
                                 <div class="card bg-black h-100">
                                     <img src="assets/images/blog/1.png" class="card-img-top" alt="Blog Image">
                                     <div class="card-body text-white">
@@ -668,7 +795,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
+                            <div class="swiper-slide" data-aos="fade-up" data-aos-duration="1500">
                                 <div class="card bg-black h-100">
                                     <img src="assets/images/blog/2.png" class="card-img-top" alt="Blog Image">
                                     <div class="card-body text-white">
@@ -677,7 +804,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
+                            <div class="swiper-slide" data-aos="fade-up" data-aos-duration="1500">
                                 <div class="card bg-black h-100">
                                     <img src="assets/images/blog/3.png" class="card-img-top" alt="Blog Image">
                                     <div class="card-body text-white">
@@ -686,7 +813,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
+                            <div class="swiper-slide" data-aos="fade-up" data-aos-duration="1500">
                                 <div class="card bg-black h-100">
                                     <img src="assets/images/blog/2.png" class="card-img-top" alt="Blog Image">
                                     <div class="card-body text-white">
@@ -709,7 +836,7 @@
 
     <!-- ============================ Subscribe start ========================= -->
     <section class="subscribe py-5 bg-white text-black">
-        <div class="container">
+        <div class="container py-5">
             <div class="row justify-content-between align-items-center">
                 <div class="col-md-4 col-12 mb-3 mb-md-0">
                     <p class="fs-48 font-primary text-uppercase">Get the</p>
@@ -741,8 +868,8 @@
             <div class="logo text-center">
                 <img src="assets/images/logo/navbar-logo.svg" class="img-fluid" alt="">
             </div>
-            <div class="footer-menu d-flex justify-content-center font-para fw-400 fs-14">
-                <ul>
+            <div class="footer-menufont-para d-flex justify-content-center fw-400 fs-14">
+                <ul class="d-flex justify-content-center flex-wrap">
                     <li>
                         123, Patva Builing, Surat
                     </li>
@@ -750,11 +877,12 @@
                         Gujrat, India
                     </li>
                     <li>
-                        <a href="tel:+91 1234567890">+91 12345 67890</a>
+                        <a class="text-decoration-none text-white" href="tel:+91 1234567890">+91 12345 67890</a>
                     </li>
 
                     <li>
-                        <a href="">jsdiamond@Gmail.com</a>
+                        <a class="text-decoration-none text-white"
+                            href="mailto:jsdiamond@Gmail.com">jsdiamond@Gmail.com</a>
                     </li>
                 </ul>
             </div>
@@ -783,7 +911,8 @@
                 </div>
 
                 <div class="col-12 col-md-6 mt-3 mt-md-0 text-md-end">
-                    <a href="" class="font-para fw-500 fs-14 text-decoration-none">Business Ethics Policy</a>
+                    <a href="ethics-policy.html" class="font-para fw-500 fs-14 text-decoration-none">Business Ethics
+                        Policy</a>
                 </div>
             </div>
         </div>
@@ -825,6 +954,23 @@
 
 
         var swiper_department = new Swiper('.swiper_department', {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            loop: false,
+            breakpoints: {
+                640: {
+                    slidesPerView: 1
+                },
+                768: {
+                    slidesPerView: 1
+                },
+                1024: {
+                    slidesPerView: 1
+                },
+            },
+        });
+
+        var swiper_quality = new Swiper('.swiper-quality', {
             slidesPerView: 1,
             spaceBetween: 10,
             loop: false,
