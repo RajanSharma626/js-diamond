@@ -15,6 +15,9 @@
     <!-- ==== Swipper CSS CDN ==== -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
+     <!-- ===== AOS.css CDN ==== -->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <style>
         .custom-swiper-button {
             background-color: rgba(0, 0, 0, 0.5);
@@ -39,8 +42,8 @@
     <header>
         <div class="relative experties-banner">
 
-            <!-- Navbar Start -->
-            <nav class="custom-navbar p-3 d-none d-md-block">
+             <!-- Navbar Start -->
+             <nav class="custom-navbar p-3 d-none d-md-block">
                 <div class="row justify-content-evenly align-items-center">
                     <div class="col-5">
                         <ul class="mb-2 d-flex justify-content-evenly align-items-center">
@@ -48,13 +51,13 @@
                                 <i class="bi bi-list text-white fs-4"></i>
                             </li> -->
                             <li class="nav-item">
-                                <a href="experties.html">Expertise</a>
+                                <a class="fw-bold" href="experties.html">Expertise</a>
                             </li>
                             <li class="nav-item">
-                                <a href="department.html">Department</a>
+                                <a class="fw-bold" href="department.html">Department</a>
                             </li>
                             <li class="nav-item">
-                                <a href="quality-standard.html">Quality Standards</a>
+                                <a class="fw-bold" href="quality-standard.html">Quality Standards</a>
                             </li>
                         </ul>
                     </div>
@@ -65,13 +68,13 @@
                     <div class="col-5">
                         <ul class="mb-2 d-flex justify-content-evenly align-items-center">
                             <li class="nav-item">
-                                <a href="ethics.html">Our Ethics</a>
+                                <a class="fw-bold" href="ethics.html">Our Ethics</a>
                             </li>
                             <li class="nav-item">
-                                <a href="service.html">Our Service</a>
+                                <a class="fw-bold" href="service.html">Our Service</a>
                             </li>
                             <li class="nav-item">
-                                <a href="contact.html">Contact US</a>
+                                <a class="fw-bold" href="contact.html">Contact Us</a>
                             </li>
                         </ul>
                     </div>
@@ -84,7 +87,8 @@
                     <div class="col-6">
                         <ul class="ps-0">
                             <li class="nav-item">
-                                <i class="bi bi-list text-white fs-48"></i>
+                                <i class="bi bi-list text-white fs-48" data-bs-toggle="offcanvas"
+                                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"></i>
                             </li>
                         </ul>
                     </div>
@@ -95,20 +99,55 @@
                 </div>
             </nav>
 
+            <div class="mobile-nav d-md-none bg-dark">
+                <div class="offcanvas offcanvas-start bg-dark text-white" tabindex="-1" id="offcanvasNavbar">
+                    <div class="offcanvas-header">
+                        <a href="index.html"><img src="assets/images/logo/navbar-logo.svg" class="img-fluid" alt=""
+                                width="250px"></a>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 font-primary-simple fw-400">
+                            <li class="nav-item py-2">
+                                <a class="text-decoration-none text-white fw-bold" href="experties.html">Expertise</a>
+                            </li>
+                            <li class="nav-item py-2">
+                                <a class="text-decoration-none text-white fw-bold" href="department.html">Department</a>
+                            </li>
+                            <li class="nav-item py-2">
+                                <a class="text-decoration-none text-white fw-bold" href="quality-standard.html">Quality
+                                    Standards</a>
+                            </li>
+
+                            <li class="nav-item py-2">
+                                <a class="text-decoration-none text-white fw-bold" href="ethics.html">Our Ethics</a>
+                            </li>
+                            <li class="nav-item py-2">
+                                <a class="text-decoration-none text-white fw-bold" href="service.html">Our Service</a>
+                            </li>
+                            <li class="nav-item py-2">
+                                <a class="text-decoration-none text-white fw-bold" href="contact.html">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
             <!-- Banner Start -->
             <div class="banner">
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
-                            <p class="mb-0 fs-48 text-white font-primary mb-0 text-uppercase lh-1">
+                            <p class="mb-0 fs-48 text-white font-primary mb-0 text-uppercase lh-1" data-aos="fade-zoom-in" data-aos-duration="2000">
                                 AT JS DIAMOND
                             </p>
-                            <p class="fs-48 text-white font-secondary text-uppercase">
+                            <p class="fs-48 text-white font-secondary text-uppercase" data-aos="fade-zoom-in" data-aos-duration="2000">
                                 Our expertise
                                 <!-- AT <span class="banner-text-clr">JS DLAMOND</span> -->
                             </p>
 
-                            <div class="row align-items-center">
+                            <div class="row align-items-center" data-aos="fade-up" data-aos-duration="1000">
                                 <div class="col-12">
                                     <p class="mb-2 fw-300 font-para fs-14">
                                         Mastery in Sorting and Quality Assurance.
@@ -140,19 +179,19 @@
         <div class="container">
             <div class="row justify-content-evenly">
                 <div class="col-md-4 col-12">
-                    <p class="fw-300 font-para fs-14">
+                    <p class="fw-300 font-para fs-14" data-aos="fade-in" data-aos-duration="1000">
                         At JS Diamond, each gem is meticulously analyzed by two skilled sorters, who evaluate color,
                         fluorescence, cut, and clarity using the most rigorous standards.
                     </p>
                 </div>
                 <div class="col-md-4 col-12">
-                    <p class="fw-300 font-para fs-14">
+                    <p class="fw-300 font-para fs-14" data-aos="fade-in" data-aos-duration="1000">
                         carefully examined in our laboratory by expert engineers using high-precision technology,
                         ensuring unparalleled quality and authenticity for our clients.
                     </p>
                 </div>
                 <div class="col-md-4 col-12">
-                    <p class="fw-300 font-para fs-14">
+                    <p class="fw-300 font-para fs-14" data-aos="fade-in" data-aos-duration="1000">
                         we prioritize responsiveness to ensure that our inventory is consistently adjusted to meet each
                         customer’s unique needs and specifications.
                     </p>
@@ -167,22 +206,21 @@
         <div class="container-fluid">
             <div class="row py-5 flex-wrap-reverse">
                 <div class="col-md-6 col-12 p-md-5">
-                    <p class="fs-48 text-uppercase font-primary mb-md-0 text-md-center">Assortment</p>
-                    <p class="fw-300 font-para fs-14 p-md-5">
+                    <p class="fs-48 text-uppercase font-primary mb-md-0 text-md-center" data-aos="fade-up" data-aos-duration="2000">Assortment</p>
+                    <p class="fw-300 font-para fs-14 p-md-5" data-aos="fade-up" data-aos-duration="2000">
                         At JS Diamond, our expertise in diamond assortment ensures that every gem meets the highest
                         standards of quality and beauty. Our sorters meticulously evaluate color, clarity, cut, and
                         fluorescence to deliver diamonds that meet your exact specifications.
                     </p>
 
-                    <p class="fw-300 font-para fs-14 p-md-5">
+                    <p class="fw-300 font-para fs-14 p-md-5" data-aos="fade-up" data-aos-duration="2000">
                         By leveraging cutting-edge technology and expert insights, we offer tailored assortments that
                         align with diverse customer requirements. Our dedication to precision guarantees that each gem
                         in your selection is flawless and ready to shine.
                     </p>
                 </div>
                 <div class="col-md-6 col-12 primary-bg p-5 text-center mb-3 mb-md-0">
-                    <div class="p-5">
-
+                    <div class="" data-aos="fade-zoom-in" data-aos-duration="2000">
                         <img src="assets/images/experties/1.png" class="img-fluid" alt="">
                     </div>
                 </div>
@@ -195,19 +233,19 @@
     <section class="assortment">
         <div class="container-fluid">
             <div class="row py-5">
-                <div class="col-md-6 col-12 p-md-5 text-center mb-3 mb-md-0">
+                <div class="col-md-6 col-12 p-md-5 text-center mb-3 mb-md-0" data-aos="fade-zoom-in" data-aos-duration="2000">
                     <img src="assets/images/experties/2.png" class="img-fluid" alt="">
                 </div>
 
                 <div class="col-md-6 col-12 p-md-5 ">
-                    <p class="text-uppercase font-primary mb-md-0 text-md-center fs-48">Expertise in In-House R&D</p>
-                    <p class="fw-300 font-para fs-14 p-md-5">
+                    <p class="text-uppercase font-primary mb-md-0 text-md-center fs-48" data-aos="fade-up" data-aos-duration="2000">Expertise in In-House R&D</p>
+                    <p class="fw-300 font-para fs-14 p-md-5" data-aos="fade-up" data-aos-duration="2000">
                         Our in-house Research and Development team drives innovation to stay ahead in the diamond
                         industry. From improving cutting techniques to designing sustainable solutions, we continually
                         enhance our processes to offer superior diamonds.
                     </p>
 
-                    <p class="fw-300 font-para fs-14 p-md-5">
+                    <p class="fw-300 font-para fs-14 p-md-5" data-aos="fade-up" data-aos-duration="2000">
                         Through R&D, we ensure that our diamonds meet evolving industry standards while addressing
                         client needs with creativity and innovation. At JS Diamond, innovation and craftsmanship go hand
                         in hand to deliver exceptional results.
@@ -223,20 +261,20 @@
         <div class="container-fluid">
             <div class="row py-5 flex-wrap-reverse">
                 <div class="col-md-6 col-12 p-md-5 ">
-                    <p class="text-uppercase font-primary mb-md-0 text-md-center fs-48">Inventory Management</p>
-                    <p class="fw-300 font-para fs-14 p-md-5">
+                    <p class="text-uppercase font-primary mb-md-0 text-md-center fs-48" data-aos="fade-up" data-aos-duration="2000">Inventory Management</p>
+                    <p class="fw-300 font-para fs-14 p-md-5" data-aos="fade-up" data-aos-duration="2000">
                         JS Diamond's inventory management system is designed to ensure seamless operations and quick
                         adaptability to market demands. We maintain a well-organized and extensive inventory that
                         enables us to respond promptly to customer needs.
                     </p>
 
-                    <p class="fw-300 font-para fs-14 p-md-5">
+                    <p class="fw-300 font-para fs-14 p-md-5" data-aos="fade-up" data-aos-duration="2000">
                         By integrating advanced logistics and real-time tracking systems, we optimize high-volume
                         imports and exports. Our commitment to operational excellence ensures that our inventory aligns
                         perfectly with your business goals.
                     </p>
                 </div>
-                <div class="col-md-6 col-12 p-md-5 mb-md-0 mb-3 text-center">
+                <div class="col-md-6 col-12 p-md-5 mb-md-0 mb-3 text-center" data-aos="fade-zoom-in" data-aos-duration="2000">
 
                     <img src="assets/images/experties/3.png" class="img-fluid" alt="">
 
@@ -250,19 +288,19 @@
     <section class="technologies">
         <div class="container-fluid">
             <div class="row py-5">
-                <div class="col-md-6 col-12 p-md-5 mb-3 mb-md-0 text-center">
+                <div class="col-md-6 col-12 p-md-5 mb-3 mb-md-0 text-center" data-aos="fade-zoom-in" data-aos-duration="2000">
                     <img src="assets/images/experties/4.png" class="img-fluid" alt="">
                 </div>
 
                 <div class="col-md-6 col-12 p-md-5 ">
-                    <p class="text-uppercase font-primary mb-md-0 text-md-center fs-48">Technologies</p>
-                    <p class="fw-300 font-para fs-14 p-md-5">
+                    <p class="text-uppercase font-primary mb-md-0 text-md-center fs-48" data-aos="fade-up" data-aos-duration="2000">Technologies</p>
+                    <p class="fw-300 font-para fs-14 p-md-5" data-aos="fade-up" data-aos-duration="2000">
                         JS Diamond leverages cutting-edge technologies to revolutionize the diamond industry. From
                         high-precision analysis tools to advanced logistics systems, we integrate innovation into every
                         aspect of our operations.
                     </p>
 
-                    <p class="fw-300 font-para fs-14 p-md-5">
+                    <p class="fw-300 font-para fs-14 p-md-5" data-aos="fade-up" data-aos-duration="2000">
                         Our state-of-the-art technology ensures accuracy in sorting, quality control, and inventory
                         management. By embracing the latest advancements, we deliver exceptional products and services
                         with unmatched efficiency.
@@ -278,8 +316,8 @@
         <div class="container-fluid">
             <div class="row py-5 flex-wrap-reverse">
                 <div class="col-md-6 col-12 p-md-5 ">
-                    <h2 class="text-uppercase font-primary mb-md-0 text-md-center fs-48">Inventory Management</h2>
-                    <p class="fw-300 font-para fs-14 p-md-5">
+                    <h2 class="text-uppercase font-primary mb-md-0 text-md-center fs-48" data-aos="fade-up" data-aos-duration="2000">Inventory Management</h2>
+                    <p class="fw-300 font-para fs-14 p-md-5" data-aos="fade-up" data-aos-duration="2000">
                         At JS Diamond, our commitment to delivering unparalleled diamond products is rooted in
                         precision, quality, and innovation. Each diamond undergoes a meticulous process, ensuring its
                         brilliance, durability, and authenticity. Our skilled artisans and advanced technology come
@@ -287,13 +325,13 @@
                         masterpieces that exceed global standards.
                     </p>
 
-                    <p class="fw-300 font-para fs-14 p-md-5">
+                    <p class="fw-300 font-para fs-14 p-md-5" data-aos="fade-up" data-aos-duration="2000">
                         We prioritize excellence in every step, from sourcing the finest natural diamonds to creating
                         pieces that captivate. Whether for jewelry or investment, our diamonds are a testament to our
                         dedication to superior craftsmanship and customer satisfaction.
                     </p>
                 </div>
-                <div class="col-md-6 col-12 p-md-5 mb-3 mb-md-0 text-center">
+                <div class="col-md-6 col-12 p-md-5 mb-3 mb-md-0 text-center" data-aos="fade-zoom-in" data-aos-duration="2000">
 
                     <img src="assets/images/experties/5.png" class="img-fluid" alt="">
 
@@ -329,7 +367,7 @@
                 <div class="col-md-9 col-12">
                     <div class="swiper swiper-blog">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide" data-aos="fade-up" data-aos-duration="1500">
+                            <div class="swiper-slide" data-aos="fade-up" data-aos-duration="2000">
                                 <div class="card bg-black h-100">
                                     <img src="assets/images/blog/1.png" class="card-img-top" alt="Blog Image">
                                     <div class="card-body text-white">
@@ -338,7 +376,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide" data-aos="fade-up" data-aos-duration="1500">
+                            <div class="swiper-slide" data-aos="fade-up" data-aos-duration="2000">
                                 <div class="card bg-black h-100">
                                     <img src="assets/images/blog/2.png" class="card-img-top" alt="Blog Image">
                                     <div class="card-body text-white">
@@ -347,7 +385,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide" data-aos="fade-up" data-aos-duration="1500">
+                            <div class="swiper-slide" data-aos="fade-up" data-aos-duration="2000">
                                 <div class="card bg-black h-100">
                                     <img src="assets/images/blog/3.png" class="card-img-top" alt="Blog Image">
                                     <div class="card-body text-white">
@@ -356,7 +394,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide" data-aos="fade-up" data-aos-duration="1500">
+                            <div class="swiper-slide" data-aos="fade-up" data-aos-duration="2000">
                                 <div class="card bg-black h-100">
                                     <img src="assets/images/blog/2.png" class="card-img-top" alt="Blog Image">
                                     <div class="card-body text-white">
@@ -472,6 +510,12 @@
 
     <!-- ===== Swipper JS CDN ==== -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <!-- AOS.js CDN -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
 
     <script>
         var swiper = new Swiper('.swiper', {

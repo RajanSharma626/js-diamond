@@ -85,7 +85,8 @@
                     <div class="col-6">
                         <ul class="ps-0">
                             <li class="nav-item">
-                                <i class="bi bi-list text-white fs-48"></i>
+                                <i class="bi bi-list text-white fs-48" data-bs-toggle="offcanvas"
+                                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"></i>
                             </li>
                         </ul>
                     </div>
@@ -95,6 +96,41 @@
                     </div>
                 </div>
             </nav>
+
+            <div class="mobile-nav d-md-none bg-dark">
+                <div class="offcanvas offcanvas-start bg-dark text-white" tabindex="-1" id="offcanvasNavbar">
+                    <div class="offcanvas-header">
+                        <a href="index.html"><img src="assets/images/logo/navbar-logo.svg" class="img-fluid" alt=""
+                                width="250px"></a>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 font-primary-simple fw-400">
+                            <li class="nav-item py-2">
+                                <a class="text-decoration-none text-white" href="experties.html">Expertise</a>
+                            </li>
+                            <li class="nav-item py-2">
+                                <a class="text-decoration-none text-white" href="department.html">Department</a>
+                            </li>
+                            <li class="nav-item py-2">
+                                <a class="text-decoration-none text-white" href="quality-standard.html">Quality
+                                    Standards</a>
+                            </li>
+
+                            <li class="nav-item py-2">
+                                <a class="text-decoration-none text-white" href="ethics.html">Our Ethics</a>
+                            </li>
+                            <li class="nav-item py-2">
+                                <a class="text-decoration-none text-white" href="service.html">Our Service</a>
+                            </li>
+                            <li class="nav-item py-2">
+                                <a class="text-decoration-none text-white" href="contact.html">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
             <!-- Banner Start -->
             <div class="department-banner-content">

@@ -2,676 +2,736 @@
 
 /* @import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&family=Golos+Text:wght@400..900&family=Inter:wght@100..900&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap'); */
 
-@import url('https://fonts.cdnfonts.com/css/helvetica-neue-55');
+@import url("https://fonts.cdnfonts.com/css/helvetica-neue-55");
 
 @font-face {
-    font-family: 'Times Now';
-    src: url('../font/TimesNow-SemiLight.eot');
-    src: local('Times Now SemiLight'), local('TimesNow-SemiLight'),
-        url('../font/TimesNow-SemiLight.eot?#iefix') format('embedded-opentype'),
-        url('../font/TimesNow-SemiLight.woff2') format('woff2'),
-        url('../font/TimesNow-SemiLight.woff') format('woff'),
-        url('../font/TimesNow-SemiLight.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
+  font-family: APTimes;
+  src: url('../font/TimesNow-ExtraLightItalic.woff2') format('woff2'),
+    url('../font/TimesNow-ExtraLightItalic.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
 }
 
 @font-face {
-    font-family: 'Times Now';
-    src: url('../font/TimesNow-LightItalic.eot');
-    src: local('Times Now Light Italic'), local('TimesNow-LightItalic'),
-        url('../font/TimesNow-LightItalic.eot?#iefix') format('embedded-opentype'),
-        url('../font/TimesNow-LightItalic.woff2') format('woff2'),
-        url('../font/TimesNow-LightItalic.woff') format('woff'),
-        url('../font/TimesNow-LightItalic.ttf') format('truetype');
-    font-weight: 300;
-    font-style: italic;
+  font-family: APHelvetica;
+  src: url('../font/HelveticaNeueLTCom-UltLt.woff2') format('woff2'),
+    url('../font/HelveticaNeueLTCom-UltLt.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Times Now';
-    src: url('../font/TimesNow-Bold.eot');
-    src: local('Times Now Bold'), local('TimesNow-Bold'),
-        url('../font/TimesNow-Bold.eot?#iefix') format('embedded-opentype'),
-        url('../font/TimesNow-Bold.woff2') format('woff2'),
-        url('../font/TimesNow-Bold.woff') format('woff'),
-        url('../font/TimesNow-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
+  font-family: APHelvetica;
+  src: url('../font/HelveticaNeueLTCom-Th.woff2') format('woff2'),
+    url('../font/HelveticaNeueLTCom-Th.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Times Now';
-    src: url('../font/TimesNow-BoldItalic.eot');
-    src: local('Times Now Bold Italic'), local('TimesNow-BoldItalic'),
-        url('../font/TimesNow-BoldItalic.eot?#iefix') format('embedded-opentype'),
-        url('../font/TimesNow-BoldItalic.woff2') format('woff2'),
-        url('../font/TimesNow-BoldItalic.woff') format('woff'),
-        url('../font/TimesNow-BoldItalic.ttf') format('truetype');
-    font-weight: bold;
-    font-style: italic;
+  font-family: APHelvetica;
+  src: url('../font/HelveticaNeueLTCom-Lt.woff2') format('woff2'),
+    url('../font/HelveticaNeueLTCom-Lt.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Times Now';
-    src: url('../font/TimesNow-SemiBoldItalic.eot');
-    src: local('Times Now SemiBold Italic'), local('TimesNow-SemiBoldItalic'),
-        url('../font/TimesNow-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
-        url('../font/TimesNow-SemiBoldItalic.woff2') format('woff2'),
-        url('../font/TimesNow-SemiBoldItalic.woff') format('woff'),
-        url('../font/TimesNow-SemiBoldItalic.ttf') format('truetype');
-    font-weight: 600;
-    font-style: italic;
+  font-family: APHelvetica;
+  src: url('../font/HelveticaNeueLTCom-Md.woff2') format('woff2'),
+    url('../font/HelveticaNeueLTCom-Md.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Times Now';
-    src: url('../font/TimesNow-SemiLightItalic.eot');
-    src: local('Times Now SemiLight Italic'), local('TimesNow-SemiLightItalic'),
-        url('../font/TimesNow-SemiLightItalic.eot?#iefix') format('embedded-opentype'),
-        url('../font/TimesNow-SemiLightItalic.woff2') format('woff2'),
-        url('../font/TimesNow-SemiLightItalic.woff') format('woff'),
-        url('../font/TimesNow-SemiLightItalic.ttf') format('truetype');
-    font-weight: 300;
-    font-style: italic;
+  font-family: MyriadPro;
+  src: url('../font/russian/MyriadProLightItalic.woff2') format('woff2'),
+    url('../font/russian/MyriadProLightItalic.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Times Now';
-    src: url('../font/TimesNow-SemiBold.eot');
-    src: local('Times Now SemiBold'), local('TimesNow-SemiBold'),
-        url('../font/TimesNow-SemiBold.eot?#iefix') format('embedded-opentype'),
-        url('../font/TimesNow-SemiBold.woff2') format('woff2'),
-        url('../font/TimesNow-SemiBold.woff') format('woff'),
-        url('../font/TimesNow-SemiBold.ttf') format('truetype');
-    font-weight: 600;
-    font-style: normal;
+  font-family: MyriadPro;
+  src: url('../font/russian/MyriadProSemibold.woff2') format('woff2'),
+    url('../font/russian/MyriadProSemibold.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: "Times Now";
+  src: url("../font/TimesNow-SemiLight.eot");
+  src: local("Times Now SemiLight"), local("TimesNow-SemiLight"),
+    url("../font/TimesNow-SemiLight.eot?#iefix") format("embedded-opentype"),
+    url("../font/TimesNow-SemiLight.woff2") format("woff2"),
+    url("../font/TimesNow-SemiLight.woff") format("woff"),
+    url("../font/TimesNow-SemiLight.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Times Now';
-    src: url('../font/TimesNow-ExtraLightItalic.eot');
-    src: local('Times Now ExtraLight Italic'), local('TimesNow-ExtraLightItalic'),
-        url('../font/TimesNow-ExtraLightItalic.eot?#iefix') format('embedded-opentype'),
-        url('../font/TimesNow-ExtraLightItalic.woff2') format('woff2'),
-        url('../font/TimesNow-ExtraLightItalic.woff') format('woff'),
-        url('../font/TimesNow-ExtraLightItalic.ttf') format('truetype');
-    font-weight: 200;
-    font-style: italic;
+  font-family: "Times Now";
+  src: url("../font/TimesNow-LightItalic.eot");
+  src: local("Times Now Light Italic"), local("TimesNow-LightItalic"),
+    url("../font/TimesNow-LightItalic.eot?#iefix") format("embedded-opentype"),
+    url("../font/TimesNow-LightItalic.woff2") format("woff2"),
+    url("../font/TimesNow-LightItalic.woff") format("woff"),
+    url("../font/TimesNow-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
 }
 
 @font-face {
-    font-family: 'Times Now';
-    src: url('../font/TimesNow-ExtraLight.eot');
-    src: local('Times Now ExtraLight'), local('TimesNow-ExtraLight'),
-        url('../font/TimesNow-ExtraLight.eot?#iefix') format('embedded-opentype'),
-        url('../font/TimesNow-ExtraLight.woff2') format('woff2'),
-        url('../font/TimesNow-ExtraLight.woff') format('woff'),
-        url('../font/TimesNow-ExtraLight.ttf') format('truetype');
-    font-weight: 200;
-    font-style: normal;
+  font-family: "Times Now";
+  src: url("../font/TimesNow-Bold.eot");
+  src: local("Times Now Bold"), local("TimesNow-Bold"),
+    url("../font/TimesNow-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../font/TimesNow-Bold.woff2") format("woff2"),
+    url("../font/TimesNow-Bold.woff") format("woff"),
+    url("../font/TimesNow-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Times Now';
-    src: url('../font/TimesNow-ExtraBold.eot');
-    src: local('Times Now ExtraBold'), local('TimesNow-ExtraBold'),
-        url('../font/TimesNow-ExtraBold.eot?#iefix') format('embedded-opentype'),
-        url('../font/TimesNow-ExtraBold.woff2') format('woff2'),
-        url('../font/TimesNow-ExtraBold.woff') format('woff'),
-        url('../font/TimesNow-ExtraBold.ttf') format('truetype');
-    font-weight: 800;
-    font-style: normal;
+  font-family: "Times Now";
+  src: url("../font/TimesNow-BoldItalic.eot");
+  src: local("Times Now Bold Italic"), local("TimesNow-BoldItalic"),
+    url("../font/TimesNow-BoldItalic.eot?#iefix") format("embedded-opentype"),
+    url("../font/TimesNow-BoldItalic.woff2") format("woff2"),
+    url("../font/TimesNow-BoldItalic.woff") format("woff"),
+    url("../font/TimesNow-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
 }
 
 @font-face {
-    font-family: 'Times Now';
-    src: url('../font/TimesNow-ExtraBoldItalic.eot');
-    src: local('Times Now ExtraBold Italic'), local('TimesNow-ExtraBoldItalic'),
-        url('../font/TimesNow-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
-        url('../font/TimesNow-ExtraBoldItalic.woff2') format('woff2'),
-        url('../font/TimesNow-ExtraBoldItalic.woff') format('woff'),
-        url('../font/TimesNow-ExtraBoldItalic.ttf') format('truetype');
-    font-weight: 800;
-    font-style: italic;
+  font-family: "Times Now";
+  src: url("../font/TimesNow-SemiBoldItalic.eot");
+  src: local("Times Now SemiBold Italic"), local("TimesNow-SemiBoldItalic"),
+    url("../font/TimesNow-SemiBoldItalic.eot?#iefix") format("embedded-opentype"),
+    url("../font/TimesNow-SemiBoldItalic.woff2") format("woff2"),
+    url("../font/TimesNow-SemiBoldItalic.woff") format("woff"),
+    url("../font/TimesNow-SemiBoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
 }
 
 @font-face {
-    font-family: 'Times Now';
-    src: url('../font/TimesNow-Light.eot');
-    src: local('Times Now Light'), local('TimesNow-Light'),
-        url('../font/TimesNow-Light.eot?#iefix') format('embedded-opentype'),
-        url('../font/TimesNow-Light.woff2') format('woff2'),
-        url('../font/TimesNow-Light.woff') format('woff'),
-        url('../font/TimesNow-Light.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
+  font-family: "Times Now";
+  src: url("../font/TimesNow-SemiLightItalic.eot");
+  src: local("Times Now SemiLight Italic"), local("TimesNow-SemiLightItalic"),
+    url("../font/TimesNow-SemiLightItalic.eot?#iefix") format("embedded-opentype"),
+    url("../font/TimesNow-SemiLightItalic.woff2") format("woff2"),
+    url("../font/TimesNow-SemiLightItalic.woff") format("woff"),
+    url("../font/TimesNow-SemiLightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
 }
+
+@font-face {
+  font-family: "Times Now";
+  src: url("../font/TimesNow-SemiBold.eot");
+  src: local("Times Now SemiBold"), local("TimesNow-SemiBold"),
+    url("../font/TimesNow-SemiBold.eot?#iefix") format("embedded-opentype"),
+    url("../font/TimesNow-SemiBold.woff2") format("woff2"),
+    url("../font/TimesNow-SemiBold.woff") format("woff"),
+    url("../font/TimesNow-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Times Now";
+  src: url("../font/TimesNow-ExtraLightItalic.eot");
+  src: local("Times Now ExtraLight Italic"), local("TimesNow-ExtraLightItalic"),
+    url("../font/TimesNow-ExtraLightItalic.eot?#iefix") format("embedded-opentype"),
+    url("../font/TimesNow-ExtraLightItalic.woff2") format("woff2"),
+    url("../font/TimesNow-ExtraLightItalic.woff") format("woff"),
+    url("../font/TimesNow-ExtraLightItalic.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Times Now";
+  src: url("../font/TimesNow-ExtraLight.eot");
+  src: local("Times Now ExtraLight"), local("TimesNow-ExtraLight"),
+    url("../font/TimesNow-ExtraLight.eot?#iefix") format("embedded-opentype"),
+    url("../font/TimesNow-ExtraLight.woff2") format("woff2"),
+    url("../font/TimesNow-ExtraLight.woff") format("woff"),
+    url("../font/TimesNow-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Times Now";
+  src: url("../font/TimesNow-ExtraBold.eot");
+  src: local("Times Now ExtraBold"), local("TimesNow-ExtraBold"),
+    url("../font/TimesNow-ExtraBold.eot?#iefix") format("embedded-opentype"),
+    url("../font/TimesNow-ExtraBold.woff2") format("woff2"),
+    url("../font/TimesNow-ExtraBold.woff") format("woff"),
+    url("../font/TimesNow-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Times Now";
+  src: url("../font/TimesNow-ExtraBoldItalic.eot");
+  src: local("Times Now ExtraBold Italic"), local("TimesNow-ExtraBoldItalic"),
+    url("../font/TimesNow-ExtraBoldItalic.eot?#iefix") format("embedded-opentype"),
+    url("../font/TimesNow-ExtraBoldItalic.woff2") format("woff2"),
+    url("../font/TimesNow-ExtraBoldItalic.woff") format("woff"),
+    url("../font/TimesNow-ExtraBoldItalic.ttf") format("truetype");
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Times Now";
+  src: url("../font/TimesNow-Light.eot");
+  src: local("Times Now Light"), local("TimesNow-Light"),
+    url("../font/TimesNow-Light.eot?#iefix") format("embedded-opentype"),
+    url("../font/TimesNow-Light.woff2") format("woff2"),
+    url("../font/TimesNow-Light.woff") format("woff"),
+    url("../font/TimesNow-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+
 
 
 :root {
-    --font-family-primary: 'Helvetica Neue', sans-serif;
-    --font-family-secondary: "Times Now", serif;
-    --primary-color: #053573;
+  --font-family-primary: APHelvetica;
+  --font-family-secondary: APTimes;
+  --primary-color: #053573;
+}
 
+.font-primary-simple {
+  font-family: var(--font-family-primary);
 }
 
 .font-primary {
-    font: 100 5.6rem / 1 var(--font-family-primary);
-    letter-spacing: -.056rem;
+  font: 100 5.6rem / 1 var(--font-family-primary);
+  letter-spacing: -0.056rem;
 }
 
 .font-para {
-    font-family: var(--font-family-primary) !important;
-    font-weight: 400 !important;
+  font-family: var(--font-family-primary) !important;
+  /* font-weight: 400 !important; */
 }
 
 .fw-300 {
-    font-weight: 300;
+  font-weight: 300;
 }
 
 .fw-200 {
-    font-weight: 200;
+  font-weight: 200;
 }
 
 .fw-500 {
-    font-weight: 500;
+  font-weight: 500;
 }
 
 .fw-400 {
-    font-weight: 400;
+  font-weight: 400;
 }
 
 .fw-600 {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .fw-700 {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .fw-800 {
-    font-weight: 800;
+  font-weight: 800;
 }
 
 .font-secondary {
-    font: 100 italic 6rem/.83 var(--font-family-secondary);
-    letter-spacing: -.12rem;
+  font: 100 italic 6rem/0.83 var(--font-family-secondary);
+  letter-spacing: -0.12rem;
 }
 
-
 .golos-font {
-    font-family: "Golos Text", serif;
-    font-optical-sizing: auto;
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Golos Text", serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
 }
 
 .old-standard-tt-regular {
-    font-family: "Old Standard TT", serif;
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .old-standard-tt-bold {
-    font-family: "Old Standard TT", serif;
-    font-weight: 700;
-    font-style: normal;
+  font-family: "Old Standard TT", serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 .old-standard-tt-regular-italic {
-    font-family: "Old Standard TT", serif;
-    font-weight: 300;
-    font-style: italic;
-    line-height: 40px;
+  font-family: "Old Standard TT", serif;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 40px;
 }
 
-
 .inter-font {
-    font-family: "Inter", serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
 }
 
 .darker-grotesque-font {
-    font-family: "Darker Grotesque", serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
+  font-family: "Darker Grotesque", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
 }
 
 body {
-    background-color: #000;
-    color: #fff;
+  background-color: #000;
+  color: #fff;
 }
 
-
 .custom-swiper-button {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .custom-swiper-button:hover {
-    background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .swiper-button-next::after,
 .swiper-button-prev::after {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .primary-font {
-    font-family: var(--font-family-primary) !important;
+  font-family: var(--font-family-primary) !important;
 }
 
 .secondary-font {
-    font-family: var(--font-family-secondary) !important;
+  font-family: var(--font-family-secondary) !important;
 }
 
 .primary-clr {
-    color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 .light-primary-bg {
-    background-color: #0535738e;
+  background-color: #0535738e;
 }
 
 .fs-12 {
-    font-size: 12px;
+  font-size: 12px;
 }
 
 .fs-14 {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 .fs-16 {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 .fs-18 {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 .fs-20 {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .fs-22 {
-    font-size: 22px;
+  font-size: 22px;
 }
 
 .fs-24 {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 .fs-26 {
-    font-size: 26px;
+  font-size: 26px;
 }
 
 .fs-28 {
-    font-size: 28px;
+  font-size: 28px;
 }
 
 .fs-30 {
-    font-size: 30px;
+  font-size: 30px;
 }
 
 .fs-32 {
-    font-size: 32px;
+  font-size: 32px;
 }
 
 .fs-34 {
-    font-size: 34px;
+  font-size: 34px;
 }
 
 .fs-36 {
-    font-size: 36px;
+  font-size: 36px;
 }
 
 .fs-38 {
-    font-size: 38px;
+  font-size: 38px;
 }
 
 .fs-40 {
-    font-size: 40px;
+  font-size: 40px;
 }
 
 .fs-42 {
-    font-size: 42px;
+  font-size: 42px;
 }
 
 .fs-44 {
-    font-size: 44px;
+  font-size: 44px;
 }
 
 .fs-46 {
-    font-size: 46px;
+  font-size: 46px;
 }
 
 .fs-48 {
-    font-size: 48px;
+  font-size: 48px;
 }
 
 @media (max-width: 576px) {
+  .fs-48 {
+    font-size: 38px !important;
+  }
 
-    .fs-48 {
-        font-size: 38px !important;
-    }
-
-    .fs-14 {
-        font-size: 12px !important;
-    }
+  .fs-14 {
+    font-size: 12px !important;
+  }
 }
 
-
 .fs-50 {
-    font-size: 50px;
+  font-size: 50px;
 }
 
 .fs-64 {
-    font-size: 64px;
+  font-size: 64px;
 }
 
 .fs-70 {
-    font-size: 70px;
+  font-size: 70px;
 }
 
-
-
 .line-heigh26 {
-    line-height: 26px;
+  line-height: 26px;
 }
 
 .line-heigh30 {
-    line-height: 30px;
+  line-height: 30px;
 }
 
 .line-heigh34 {
-    line-height: 34px;
+  line-height: 34px;
 }
 
 .custom-link {
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
+}
+
+.blur-bg {
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+  background-color: rgba(255, 255, 255, 0.258);
+  transition: backdrop-filter 2s, -webkit-backdrop-filter 2s, background-color 2s;
 }
 
 .primary-font {
-    font-family: var(--font-family-primary) !important;
+  font-family: var(--font-family-primary) !important;
 }
 
 .primary-bg {
-    background-color: var(--primary-color);
+  background-color: var(--primary-color);
 }
 
 .padding-1px {
-    padding: 1px;
+  padding: 1px;
 }
 
 .text-decoration-none {
-    text-decoration: none !important;
+  text-decoration: none !important;
 }
 
 .btn-theme {
-    border: 1.5px solid var(--primary-color);
-    color: var(--primary-color);
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
+  border: 1.5px solid var(--primary-color);
+  color: var(--primary-color);
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 .btn-theme:hover {
-    background-color: var(--primary-color);
-    color: #fff;
+  background-color: var(--primary-color);
+  color: #fff;
 }
-
 
 .h-100vh {
-    height: 100vh;
+  height: 100vh;
 }
-
 
 /* ============== Navbar ============= */
 .custom-navbar ul,
 .mobile-custom-navbar ul {
-    list-style-type: none !important;
+  list-style-type: none !important;
 }
 
 .custom-navbar ul,
 .mobile-custom-navbar ul {
-    list-style-type: none !important;
+  list-style-type: none !important;
 }
 
 .custom-navbar ul li a,
 .mobile-custom-navbar ul li a {
-    color: #fff !important;
-    font-family: var(--font-family-primary);
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 0.8rem;
+  color: #fff !important;
+  font-family: var(--font-family-primary);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.8rem;
 }
 
 .banner-container {
-    height: 100vh;
-    background: url('../images/banner/banner.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  height: 100vh;
+  background: url("../images/banner/banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .banner-text-clr {
-    color: #1557AB;
+  color: #1557ab;
 }
 
 .banner,
 .department-banner-content,
 .services-banner-content,
-.contact-banner-content,
 .ethic-banner-content {
-    position: absolute;
-    top: 50%;
-    left: 20%;
-    transform: translate(-20%, -40%);
+  position: absolute;
+  top: 60%;
+  left: 15%;
+  transform: translate(-20%, -40%);
+}
+
+.services-banner-content ,
+.contact-banner-content{
+  position: absolute;
+  top: 60%;
+  left: 15%;
+  transform: translate(-10%, -40%);
 }
 
 @media (max-width: 576px) {
 
-    .banner,
-    .department-banner-content,
-    .services-banner-content,
-    .contact-banner-content,
-    .ethic-banner-content {
-        position: absolute;
-        bottom: 0px;
-        left: 10%;
-        transform: translate(-10%);
-    }
+  .banner,
+  .department-banner-content,
+  .services-banner-content,
+  .contact-banner-content,
+  .ethic-banner-content {
+    position: absolute;
+    bottom: 0px;
+    left: 10%;
+    transform: translate(-10%);
+  }
 }
-
 
 /* ============== Department BAnner ============= */
 .banner-text {
-    position: absolute;
-    top: 50%;
-    left: 20%;
-    transform: translate(-20%, -40%);
-
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-20%, -40%);
 }
 
 .department-banner {
-    height: 100vh;
-    background: url('../images/department/2.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  height: 100vh;
+  background: url("../images/department/2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 /* ================== Footer ====================== */
 
 footer ul {
-    display: flex;
-    gap: 50px;
-    color: #fff;
+  display: flex;
+  gap: 50px;
+  color: #fff;
 }
 
 .footer-menu ul li a {
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 
 .footer-socail ul {
-    list-style: none;
-    gap: 20px;
+  list-style: none;
+  gap: 20px;
 }
 
 .footer-socail ul li a {
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 
 .btn-custom {
-    background-color: #fff;
-    color: #000;
+  background-color: #fff;
+  color: #000;
 }
 
 .btn-custom:hover {
-    background-color: aliceblue;
-    color: #000;
+  background-color: aliceblue;
+  color: #000;
 }
 
 /* ============== Subscribe ============= */
 .subscribe-input {
-    background-color: #fff;
-    color: #000;
+  background-color: #fff;
+  color: #000;
 }
 
 .subscribe-input:focus {
-    outline: none;
-    box-shadow: none;
+  outline: none;
+  box-shadow: none;
 }
 
 .subscribe-input::placeholder {
-    color: #888 !important;
-    font-weight: 400;
+  color: #888 !important;
+  font-weight: 400;
 }
 
 /* ================================== experties-banner =========================== */
 .experties-banner {
-    height: 100vh;
-    background: url('../images/banner/experties-banner.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  height: 100vh;
+  background: url("../images/banner/experties-banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .experties-banner .banner {
-    left: 15% !important;
+  left: 15% !important;
 }
-
 
 /* ============================ Service ========================== */
 .service-section {
-    background: url('../images/service/1.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-
+  background: url("../images/service/1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
 }
 
 .size-section {
-    background: url('../images/service/size-banner.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  background: url("../images/service/size-banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .bagging-kitting-section {
-    background: url('../images/service/bagging-kitting.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  background: url("../images/service/bagging-kitting.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .custom-assortment-section {
-    background: url('../images/service/custom-assortment.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  background: url("../images/service/custom-assortment.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .fluorescence-grading-section {
-    background: url('../images/service/fluorescence-grading.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  background: url("../images/service/fluorescence-grading.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
-
 
 /* ============== Quality Standard ================= */
 .quality-standard-banner {
-    background: url('../images/banner/quality-standard.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
+  background: url("../images/banner/quality-standard.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
 }
-
-
 
 /* =============== Service ========================= */
 
 .services-banner {
-    background: url('../images/banner/services-banner.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
+  background: url("../images/banner/services-banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
 }
 
 /* =============== Contact ========================= */
 
 .contact-banner {
-    background: url('../images/banner/services-banner.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
+  background: url("../images/banner/services-banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
 }
 
 /* =================== contact form ===================*/
 input,
 textarea {
-    background-color: #000 !important;
-    color: #fff !important;
-    border: 1px solid #fff !important;
-    padding: 10px !important;
+  background-color: #000 !important;
+  color: #fff !important;
+  border: 1px solid #fff !important;
+  padding: 10px !important;
 }
 
 ::placeholder {
-    color: #ffffff5e !important;
+  color: #ffffff5e !important;
 }
 
 /* ======================= ethic-banner ================== */
 .ethic-banner {
-    background: url('../images/banner/ethics.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
+  background: url("../images/banner/ethics.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
 }
 
 .ethic-content {
-    height: 100vh;
-    background: url('../images/ethics/background.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  height: 100vh;
+  background: url("../images/ethics/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
