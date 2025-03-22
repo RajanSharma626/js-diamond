@@ -6,60 +6,59 @@
 
 @font-face {
   font-family: APTimes;
-  src: url('../font/TimesNow-ExtraLightItalic.woff2') format('woff2'),
-    url('../font/TimesNow-ExtraLightItalic.woff') format('woff');
+  src: url("../font/TimesNow-ExtraLightItalic.woff2") format("woff2"),
+    url("../font/TimesNow-ExtraLightItalic.woff") format("woff");
   font-weight: 400;
   font-style: italic;
 }
 
 @font-face {
   font-family: APHelvetica;
-  src: url('../font/HelveticaNeueLTCom-UltLt.woff2') format('woff2'),
-    url('../font/HelveticaNeueLTCom-UltLt.woff') format('woff');
+  src: url("../font/HelveticaNeueLTCom-UltLt.woff2") format("woff2"),
+    url("../font/HelveticaNeueLTCom-UltLt.woff") format("woff");
   font-weight: 100;
   font-style: normal;
 }
 
 @font-face {
   font-family: APHelvetica;
-  src: url('../font/HelveticaNeueLTCom-Th.woff2') format('woff2'),
-    url('../font/HelveticaNeueLTCom-Th.woff') format('woff');
+  src: url("../font/HelveticaNeueLTCom-Th.woff2") format("woff2"),
+    url("../font/HelveticaNeueLTCom-Th.woff") format("woff");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: APHelvetica;
-  src: url('../font/HelveticaNeueLTCom-Lt.woff2') format('woff2'),
-    url('../font/HelveticaNeueLTCom-Lt.woff') format('woff');
+  src: url("../font/HelveticaNeueLTCom-Lt.woff2") format("woff2"),
+    url("../font/HelveticaNeueLTCom-Lt.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: APHelvetica;
-  src: url('../font/HelveticaNeueLTCom-Md.woff2') format('woff2'),
-    url('../font/HelveticaNeueLTCom-Md.woff') format('woff');
+  src: url("../font/HelveticaNeueLTCom-Md.woff2") format("woff2"),
+    url("../font/HelveticaNeueLTCom-Md.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: MyriadPro;
-  src: url('../font/russian/MyriadProLightItalic.woff2') format('woff2'),
-    url('../font/russian/MyriadProLightItalic.woff') format('woff');
+  src: url("../font/russian/MyriadProLightItalic.woff2") format("woff2"),
+    url("../font/russian/MyriadProLightItalic.woff") format("woff");
   font-weight: 100;
   font-style: normal;
 }
 
 @font-face {
   font-family: MyriadPro;
-  src: url('../font/russian/MyriadProSemibold.woff2') format('woff2'),
-    url('../font/russian/MyriadProSemibold.woff') format('woff');
+  src: url("../font/russian/MyriadProSemibold.woff2") format("woff2"),
+    url("../font/russian/MyriadProSemibold.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
-
 
 @font-face {
   font-family: "Times Now";
@@ -113,7 +112,8 @@
   font-family: "Times Now";
   src: url("../font/TimesNow-SemiBoldItalic.eot");
   src: local("Times Now SemiBold Italic"), local("TimesNow-SemiBoldItalic"),
-    url("../font/TimesNow-SemiBoldItalic.eot?#iefix") format("embedded-opentype"),
+    url("../font/TimesNow-SemiBoldItalic.eot?#iefix")
+      format("embedded-opentype"),
     url("../font/TimesNow-SemiBoldItalic.woff2") format("woff2"),
     url("../font/TimesNow-SemiBoldItalic.woff") format("woff"),
     url("../font/TimesNow-SemiBoldItalic.ttf") format("truetype");
@@ -125,7 +125,8 @@
   font-family: "Times Now";
   src: url("../font/TimesNow-SemiLightItalic.eot");
   src: local("Times Now SemiLight Italic"), local("TimesNow-SemiLightItalic"),
-    url("../font/TimesNow-SemiLightItalic.eot?#iefix") format("embedded-opentype"),
+    url("../font/TimesNow-SemiLightItalic.eot?#iefix")
+      format("embedded-opentype"),
     url("../font/TimesNow-SemiLightItalic.woff2") format("woff2"),
     url("../font/TimesNow-SemiLightItalic.woff") format("woff"),
     url("../font/TimesNow-SemiLightItalic.ttf") format("truetype");
@@ -149,7 +150,8 @@
   font-family: "Times Now";
   src: url("../font/TimesNow-ExtraLightItalic.eot");
   src: local("Times Now ExtraLight Italic"), local("TimesNow-ExtraLightItalic"),
-    url("../font/TimesNow-ExtraLightItalic.eot?#iefix") format("embedded-opentype"),
+    url("../font/TimesNow-ExtraLightItalic.eot?#iefix")
+      format("embedded-opentype"),
     url("../font/TimesNow-ExtraLightItalic.woff2") format("woff2"),
     url("../font/TimesNow-ExtraLightItalic.woff") format("woff"),
     url("../font/TimesNow-ExtraLightItalic.ttf") format("truetype");
@@ -185,7 +187,8 @@
   font-family: "Times Now";
   src: url("../font/TimesNow-ExtraBoldItalic.eot");
   src: local("Times Now ExtraBold Italic"), local("TimesNow-ExtraBoldItalic"),
-    url("../font/TimesNow-ExtraBoldItalic.eot?#iefix") format("embedded-opentype"),
+    url("../font/TimesNow-ExtraBoldItalic.eot?#iefix")
+      format("embedded-opentype"),
     url("../font/TimesNow-ExtraBoldItalic.woff2") format("woff2"),
     url("../font/TimesNow-ExtraBoldItalic.woff") format("woff"),
     url("../font/TimesNow-ExtraBoldItalic.ttf") format("truetype");
@@ -205,9 +208,6 @@
   font-style: normal;
 }
 
-
-
-
 :root {
   --font-family-primary: APHelvetica;
   --font-family-secondary: APTimes;
@@ -226,6 +226,10 @@
 .font-para {
   font-family: var(--font-family-primary) !important;
   /* font-weight: 400 !important; */
+}
+
+.letter-space{
+  letter-spacing: 0.1rem;
 }
 
 .fw-300 {
@@ -340,6 +344,10 @@ body {
 
 .light-primary-bg {
   background-color: #0535738e;
+}
+
+.no-border-radius{
+  border-radius: 0px !important;
 }
 
 .fs-12 {
@@ -461,7 +469,8 @@ body {
   backdrop-filter: blur(40px);
   -webkit-backdrop-filter: blur(40px);
   background-color: rgba(255, 255, 255, 0.258);
-  transition: backdrop-filter 2s, -webkit-backdrop-filter 2s, background-color 2s;
+  transition: backdrop-filter 2s, -webkit-backdrop-filter 2s,
+    background-color 2s;
 }
 
 .primary-font {
@@ -473,7 +482,17 @@ body {
 }
 
 .padding-1px {
-  padding: 1px;
+  padding: 0.5px;
+}
+
+.discover-link {
+  width: 25px;
+  height: 1.5px;
+  transition: all 0.5s;
+}
+
+.discover-hover:hover .discover-link {
+  width: 15px !important;
 }
 
 .text-decoration-none {
@@ -540,8 +559,8 @@ body {
   transform: translate(-20%, -40%);
 }
 
-.services-banner-content ,
-.contact-banner-content{
+.services-banner-content,
+.contact-banner-content {
   position: absolute;
   top: 60%;
   left: 15%;
@@ -549,7 +568,6 @@ body {
 }
 
 @media (max-width: 576px) {
-
   .banner,
   .department-banner-content,
   .services-banner-content,
@@ -559,6 +577,12 @@ body {
     bottom: 0px;
     left: 10%;
     transform: translate(-10%);
+  }
+
+  table td,
+  th {
+    font-size: 10px;
+    font-weight: 300;
   }
 }
 
@@ -584,6 +608,20 @@ footer ul {
   display: flex;
   gap: 50px;
   color: #fff;
+}
+
+@media (max-width: 576px) {
+  footer ul {
+    display: block;
+  }
+
+  footer ul li {
+    margin-bottom: 15px;
+  }
+
+  .footer-menu ul li{
+    width: 100%;
+  }
 }
 
 .footer-menu ul li a {
